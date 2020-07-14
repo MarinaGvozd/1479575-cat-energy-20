@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марина Гвоздь](https://up.htmlacademy.ru/adaptive/20/user/1479575).
-* Наставник: Сергей Остаповец.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim)
 
 ---
 
