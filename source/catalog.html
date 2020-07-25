@@ -8,8 +8,10 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="./img/logo-header-mobil.svg" width="190" height="38" alt="Логотип Cat Energy">
+    <a class="page-header__logo" href="index.html">
+      <div class="page-header__visual">
+        <img src="./img/logo-header-mobil.svg" width="190" height="38" alt="Логотип Cat Energy">
+      </div>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -33,9 +35,11 @@
   <main class="main-catalog">
     <h1 class="main-catalog__title">Каталог продукции</h1>
     <ul class="main-catalog__list product-list">
-      <li class="main-catalog__item product-list__item">
-        <img class="product-list__img" src="./img/catalog-1.jpg" width="68" height="86"
+      <li class="product-list__item">
+        <div class="product-list__img">
+          <img src="./img/catalog-1.jpg" width="68" height="86"
           alt="Корм со вкусом курицы 500 грамм">
+        </div>
         <table class="product-list__table">
           <caption class="product-list__caption">Cat Energy PRO 500 г</caption>
           <tr class="product-list__line">
@@ -53,9 +57,11 @@
         </table>
         <a class="product-list__order" href="#">Заказать</a>
       </li>
-      <li class="main-catalog__item product-list__item">
-        <img class="product-list__img" src="./img/catalog-2.jpg" width="84" height="101"
+      <li class="product-list__item">
+        <div class="product-list__img">
+        <img src="./img/catalog-2.jpg" width="84" height="101"
           alt="Корм со вкусом курицы 1000 грамм">
+         </div>
         <table class="product-list__table">
           <caption class="product-list__caption">Cat Energy PRO 1000 г</caption>
           <tr class="product-list__line">
@@ -73,9 +79,11 @@
         </table>
         <a class="product-list__order" href="#">Заказать</a>
       </li>
-      <li class="main-catalog__item product-list__item">
-        <img class="product-list__img" src="./img/catalog-3.jpg" width="68" height="86"
+      <li class="product-list__item">
+        <div class="product-list__img">
+          <img src="./img/catalog-3.jpg" width="68" height="86"
           alt="Корм со вкусом рыбы 500 грамм">
+          </div>
         <table class="product-list__table">
           <caption class="product-list__caption">Cat Energy PRO 500 г</caption>
           <tr class="product-list__line">
@@ -93,9 +101,11 @@
         </table>
         <a class="product-list__order" href="#">Заказать</a>
       </li>
-      <li class="main-catalog__item product-list__item">
-        <img class="product-list__img" src="./img/catalog-4.jpg" width="84" height="101"
+      <li class="product-list__item">
+        <div class="product-list__img">
+        <img src="./img/catalog-4.jpg" width="84" height="101"
           alt="Корм со вкусом рыбы 1000 грамм">
+          </div>
         <table class="product-list__table">
           <caption class="product-list__caption">Cat Energy PRO 1000 г</caption>
           <tr class="product-list__line">
@@ -113,9 +123,11 @@
         </table>
         <a class="product-list__order" href="#">Заказать</a>
       </li>
-      <li class="main-catalog__item product-list__item">
-        <img class="product-list__img" src="./img/catalog-5.jpg" width="68" height="86"
+      <li class="product-list__item">
+        <div class="product-list__img">
+        <img src="./img/catalog-5.jpg" width="68" height="86"
           alt="Корм со вкусом гречки 500 грамм">
+          </div>
         <table class="product-list__table">
           <caption class="product-list__caption">Cat Energy slim 500 г</caption>
           <tr class="product-list__line">
@@ -133,9 +145,11 @@
         </table>
         <a class="product-list__order" href="#">Заказать</a>
       </li>
-      <li class="main-catalog__item product-list__item">
-        <img class="product-list__img" src="./img/catalog-6.jpg" width="84" height="101"
+      <li class="product-list__item">
+        <div class="product-list__img">
+        <img src="./img/catalog-6.jpg" width="84" height="101"
           alt="Корм со вкусом гречки 1000 грамм">
+          </div>
         <table class="product-list__table">
           <caption class="product-list__caption">Cat Energy slim 1000 г</caption>
           <tr class="product-list__line">
@@ -153,9 +167,11 @@
         </table>
         <a class="product-list__order" href="#">Заказать</a>
       </li>
-      <li class="main-catalog__item product-list__item">
-        <img class="product-list__img" src="./img/catalog-7.jpg" width="72" height="84"
+      <li class="product-list__item">
+        <div class="product-list__img">
+        <img src="./img/catalog-7.jpg" width="72" height="84"
           alt="Корм со вкусом риса 500 грамм">
+          </div>
         <table class="product-list__table">
           <caption class="product-list__caption">Cat Energy slim 500 г</caption>
           <tr class="product-list__line">
@@ -173,13 +189,59 @@
         </table>
         <a class="product-list__order" href="#">Заказать</a>
       </li>
-      <li class="main-catalog__item product-list__item">
+      <li class="product-list__item">
         <p class="product-list__more">Показать еще 100500 товаров</p>
         <p class="product-list__text">На самом деле вкусов гораздо больше!</p>
-        <a class="product-list__all-products"href="#">Показать всё</a>
+        <a class="product-list__all-products" href="#">Показать всё</a>
       </li>
     </ul>
-
+    <section class="additional">
+      <h2 class="additional__title">Дополнительные товары</h2>
+      <div class="additional-wrapper">
+        <ul class="additional__list">
+          <li class="additional__item">
+            <h3 class="additional__name">Сахарозаменитель</h3>
+            <div class="additional__description">
+              <p class="additional__value">1 упаковка (100 г)</p>
+              <p class="additional__cost">200 Р.</p>
+            </div><a class="additional__button" href="#">Заказать</a>
+          </li>
+          <li class="additional__item">
+            <h3 class="additional__name">Питьевая вода</h3>
+            <div class="additional__description">
+              <p class="additional__value">5 литров</p>
+              <p class="additional__cost">50 Р.</p>
+            </div><a class="additional__button" href="#">Заказать</a>
+          </li>
+          <li class="additional__item">
+            <h3 class="additional__name">Молоко</h3>
+            <div class="additional__description">
+              <p class="additional__value">1 литр</p>
+              <p class="additional__cost">100 Р.</p>
+            </div><a class="additional__button" href="#">Заказать</a>
+          </li>
+          <li class="additional__item">
+            <h3 class="additional__name">Витамины</h3>
+            <div class="additional__description">
+              <p class="additional__value">1 упаковка (30 г)</p>
+              <p class="additional__cost">300 Р.</p>
+            </div><a class="additional__button" href="#">Заказать</a>
+          </li>
+        </ul>
+        <div class="additional__gift">
+          <p class="additional__gift-description">Закажите все<br>и получите чехол для кота в подарок!</p>
+        </div>
+      </div>
+    </section>
+    <section class="contacts ">
+      <h2 class="contacts__title ">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="contacts__text ">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__location">
+        <a class="contacts__map" href="#">
+          <img src="img/map-m.png " height="362" width="320" alt="Карта с нашим адрессом. ">
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -202,10 +264,10 @@
     </div>
     <div class="page-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+      <!-- <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
         <path fill="#666666"
           d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
-      </svg>
+      </svg> -->
     </div>
   </footer>
 </body>
