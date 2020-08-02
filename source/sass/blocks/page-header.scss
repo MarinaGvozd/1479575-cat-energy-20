@@ -1,0 +1,16 @@
+.page-header {
+  font-family: "oswaldregular", "Arial", sans-serif;
+  color: $black;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.page-header__logo {
+  height: 38px;
+  max-width: 190px;
+  padding: 14px 20px 14px;
+  border-bottom: 1px solid $grey-grey;
+}
+

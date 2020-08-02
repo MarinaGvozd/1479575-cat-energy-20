@@ -1,0 +1,15 @@
+.social {
+  align-self: center;
+}
+.social__list {
+  display: flex;
+  padding: 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+.social__item {
+  list-style-type: none;
+}
+.social__link {
+  text-decoration: none;
+}

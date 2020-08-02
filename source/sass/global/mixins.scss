@@ -1,0 +1,11 @@
+@mixin btn {
+  font-family: "oswaldregular", "Arial", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  background-color: $green-but;
+  color: $white;
+  cursor: pointer;
+  text-align: center;
+}
