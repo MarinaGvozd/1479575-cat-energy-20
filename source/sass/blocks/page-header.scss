@@ -1,5 +1,5 @@
 .page-header {
-  font-family: "oswaldregular", "Arial", sans-serif;
+  font-family: $Oswaldregular;
   color: $black;
   background-color: $white;
   display: flex;
@@ -13,4 +13,3 @@
   padding: 14px 20px 14px;
   border-bottom: 1px solid $grey-grey;
 }
-

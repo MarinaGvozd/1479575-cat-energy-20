@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body class="page__body">
@@ -34,10 +34,13 @@
   </header>
 
   <main class="forms">
-    <h1 class="forms__title">Подбор программы</h1>
-    <p class="forms__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    <form class="forms__inormation information" action="#" method="post">
-      <fieldset class="information__cat">
+    <div class="container-mobile">
+      <h1 class="forms__title">Подбор программы</h1>
+      <p class="forms__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form class="forms__inormation information" action="#" method="post">
+    </div>
+    <fieldset class="information__cat">
+      <div class="container-mobile">
         <legend class="visually-hidden">Информация о Коте</legend>
         <p class="information__item">
           <label class="information__label">
@@ -56,97 +59,99 @@
             <input class="information__text" type="text" name="cat-age" placeholder="7">
           </label>
         </p>
-      </fieldset>
-      <fieldset class="information__programm">
+      </div>
+    </fieldset>
+    <fieldset class="information__programm">
+      <div class="container-mobile">
         <legend class="visually-hidden">Вид программы</legend>
         <p class="information__item">
           <input class="information__radio visually-hidden" id="weight-loss" type="radio" value="weight-loss"
             name="program-type" checked>
-          <label class="information__label" for="weight-loss">
+          <label class="information__label--radio" for="weight-loss">
             Похудение
           </label>
         </p>
         <p class="information__item">
           <input class="information__radio visually-hidden" id="weight-gain" type="radio" value="weight-gain"
             name="program-type">
-          <label class="information__label" for="weight-gain">
+          <label class="information__label--radio" for="weight-gain">
             Набор массы
           </label>
         </p>
         <p class="information__item">
           <input class="information__radio visually-hidden" id="not-know" type="radio" value="not-know"
             name="program-type">
-          <label class="information__label" for="not-know">
+          <label class="information__label--radio" for="not-know">
             Не знаю (нужен ваш совет)
           </label>
         </p>
-      </fieldset>
-      <fieldset class="information__owner">
-        <legend class="information__subtitle">Контактные данные (владельца кота)</legend>
-        <p class="information__item">
-          <label class="information__label">
-            e-mail:*
-            <input class="information__text" type="email" name="e-mail" placeholder="kuklachev@gmail.com">
-          </label>
-        </p>
-        <p class="information__item">
-          <label class="information__label">Телефон:*
-            <input class="information__text" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
-          </label>
-        </p>
-      </fieldset>
-      <fieldset class="information__comment">
-        <legend class="information__subtitle">Комментарий</legend>
-        <p class="information__item">
-          <label class="visually-hidden" for="textarea"></label>
-          <textarea class="information__text-area" id="textarea" name="comment"
-            placeholder="Расскажите обо всех повадках кота"></textarea></p>
-      </fieldset>
-      <fieldset class="information__add">
-        <legend class="information__subtitle">Дополнительно</legend>
-        <p class="information__item">
-          <input class="information__checkbox visually-hidden" id="sweetener" type="checkbox" value="sweetener"
-            name="additional" checked>
-          <label class="information__label" for="sweetener"></label>
-          Сахарозаменитель
-          </label>
-        </p>
-        <p class="information__item">
-          <input class="information__checkbox visually-hidden" id="water" type="checkbox" value="water"
-            name="additional">
-          <label class="information__label" for="water">
-            Питьевая вода
-          </label>
-        </p>
-        <p class="information__item">
-          <input class="information__checkbox visually-hidden" id="milk" type="checkbox" value="milk" name="additional">
-          <label class="information__label form__label--checkbox" for="milk">
-            Молоко
-          </label>
-        </p>
-        <p class="information__item">
-          <input class="information__checkbox visually-hidden" id="vitamins" type="checkbox" value="vitamins"
-            name="additional">
-          <label class="information__label" for="vitamins">
-            Витамины
-          </label>
-        </p>
-      </fieldset>
-      <button class="information__submit" type="submit">Отправить заявку</button>
-      <p class="information__question">— Обязательные поля</p>
+      </div>
+    </fieldset>
+    <fieldset class="information__owner">
+      <legend class="information__subtitle">Контактные данные (владельца кота)</legend>
+      <p class="information__item">
+        <label class="information__label">
+          e-mail:*
+          <input class="information__text" type="email" name="e-mail" placeholder="kuklachev@gmail.com">
+        </label>
+      </p>
+      <p class="information__item">
+        <label class="information__label">Телефон:*
+          <input class="information__text" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
+        </label>
+      </p>
+    </fieldset>
+    <fieldset class="information__comment">
+      <legend class="information__subtitle">Комментарий</legend>
+      <p class="information__item">
+        <label class="visually-hidden" for="textarea"></label>
+        <textarea class="information__text-area" id="textarea" name="comment"
+          placeholder="Расскажите обо всех повадках кота"></textarea></p>
+    </fieldset>
+    <fieldset class="information__add">
+      <legend class="information__subtitle">Дополнительно</legend>
+      <p class="information__item">
+        <input class="information__checkbox visually-hidden" id="sweetener" type="checkbox" value="sweetener"
+          name="additional" checked>
+        <label class="information__label" for="sweetener"></label>
+        Сахарозаменитель
+        </label>
+      </p>
+      <p class="information__item">
+        <input class="information__checkbox visually-hidden" id="water" type="checkbox" value="water" name="additional">
+        <label class="information__label" for="water">
+          Питьевая вода
+        </label>
+      </p>
+      <p class="information__item">
+        <input class="information__checkbox visually-hidden" id="milk" type="checkbox" value="milk" name="additional">
+        <label class="information__label form__label--checkbox" for="milk">
+          Молоко
+        </label>
+      </p>
+      <p class="information__item">
+        <input class="information__checkbox visually-hidden" id="vitamins" type="checkbox" value="vitamins"
+          name="additional">
+        <label class="information__label" for="vitamins">
+          Витамины
+        </label>
+      </p>
+    </fieldset>
+    <button class="information__submit" type="submit">Отправить заявку</button>
+    <p class="information__question">— Обязательные поля</p>
     </form>
     <section class="contacts">
-      <div class="contacts__wrapper page-main__container">
-        <h2 class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
+      <div class="contacts__wrapper container-mobile">
+        <h2 class="contacts__title">Приглашаем к&nbspсотрудничеству дилеров!</h2>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="contacts__location">
-        <img src="img/map-m.png" height="362" width="320" alt="Карта с нашим адрессом. ">
+        <img class="contacts__map-picture" src="img/map-m.png" height="362" width="320" alt="Карта с нашим адрессом. ">
       </div>
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer container-mobile">
     <a class="page-footer__logo">
       <img src="./img/logo-footer-mobil.svg" width="128" height="24" alt="Логотип Cat Energy">
     </a>

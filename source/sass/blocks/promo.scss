@@ -1,12 +1,12 @@
-
 .promo {
-  padding: 29px 20px 22px;
-  background: url("../../img/index-background-mobile@1x.jpg") 0 0 no-repeat;
+  padding: 29px 0 22px;
+  background: url("../../img/index-background-mobile@1x.jpg") 50% 0 no-repeat;
   background-size: contain;
 }
+
 .promo__title {
   margin: 0;
-  font-family: "oswaldregular", "Arial", sans-serif;
+  font-family: $Oswaldregular;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -14,9 +14,10 @@
   text-align: center;
   margin-bottom: 25px;
 }
+
 .promo__description {
   margin: 0;
-  font-family: "oswaldregular", "Arial", sans-serif;
+  font-family: $Oswaldregular;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -25,6 +26,7 @@
   text-align: center;
   margin-bottom: 29px;
 }
+
 .promo__choose-program {
   @include btn;
   display: block;
@@ -32,4 +34,3 @@
   line-height: 18px;
   padding: 10px 0;
 }
-

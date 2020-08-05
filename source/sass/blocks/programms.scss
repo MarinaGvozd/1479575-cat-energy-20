@@ -1,16 +1,19 @@
 .programms {
   margin: 0 20px;
 }
+
 .programms__thin-cat,
 .programms__fat-cat {
   background-color: $drop-grey;
   padding: 20px;
 }
+
 .programms__thin-cat {
   margin-bottom: 20px;
 }
+
 .programms__title {
-  font-family: "oswaldmedium", "Arial", sans-serif;
+  font-family: $Oswaldmedium;
   font-weight: 400;
   font-size: 24px;
   line-height: 38px;
@@ -18,18 +21,20 @@
   padding-left: 70px;
   text-transform: uppercase;
 }
+
 .programms__text {
-  font-family: "Arial", sans-serif;
+  font-family: $Arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 }
+
 .programms__btn-thin-cat,
 .programms__btn-fat-cat {
   text-decoration: none;
-  font-family: "oswaldmedium", "Arial", sans-serif;
+  font-family: $Oswaldmedium;
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;

@@ -1,0 +1,51 @@
+
+.information__cat,
+.information__programm,
+.information__owner,
+.information__comment {
+  font-family: $Oswaldregular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 1px solid $grey-light-specialy;
+  margin: 0;
+}
+
+.information__text {
+  margin-left: 14px;
+  padding: 10px 15px 15px;
+}
+
+.information__label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information__label--radio {
+  position: relative;
+  padding: 8px 0 3px 45px;
+}
+
+.information__label--radio::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.information__radio:checked ~ .information__label--radio::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
