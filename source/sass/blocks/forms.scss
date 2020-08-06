@@ -1,5 +1,5 @@
 .forms {
-  padding: 27px 0 32px;
+  padding-top: 27px;
 }
 
 .forms__title {
@@ -17,4 +17,8 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 0 0 39px 0;
+}
+
+.forms__wpapper-mobile {
+  @include container-mobile;
 }

@@ -1,5 +1,5 @@
 .programms {
-  margin: 0 20px;
+  @include container-mobile;
 }
 
 .programms__thin-cat,

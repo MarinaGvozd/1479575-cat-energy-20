@@ -1,8 +1,10 @@
 .page-footers {
+  @include container-mobile;
   display: flex;
   flex-direction: column;
-  padding: 36px 0 22px;
   background-color: $drop-grey;
+  padding-top: 39px;
+  padding-bottom: 22px;
 }
 
 .page-footer__logo {
@@ -18,8 +20,4 @@
   font-size: 16px;
   line-height: 18px;
   color: $grey-dark;
-}
-
-.contacts__map-picture {
-  display: block;
 }

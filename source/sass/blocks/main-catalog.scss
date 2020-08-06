@@ -1,5 +1,6 @@
 .main-catalog {
-  padding: 27px 0 0;
+  @include container-mobile;
+  padding-top: 27px;
 }
 
 .main-catalog__title {
