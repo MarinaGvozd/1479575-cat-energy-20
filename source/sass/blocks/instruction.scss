@@ -1,5 +1,7 @@
 .instruction {
-  padding: 25px 0 17px;
+  @include container-mobile;
+  padding-top: 25px;
+  padding-bottom: 17px;
 }
 
 .instruction__title {

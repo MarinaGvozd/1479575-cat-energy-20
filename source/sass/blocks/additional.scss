@@ -1,5 +1,7 @@
 .additional {
-  padding: 28px 0 35px;
+  @include container-mobile;
+  padding-top: 28px;
+  padding-bottom: 38px;
 }
 
 .additional__title {
