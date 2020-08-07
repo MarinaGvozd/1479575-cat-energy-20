@@ -1,0 +1,24 @@
+.forms {
+  padding-top: 27px;
+}
+
+.forms__title {
+  font-family: $Oswaldregular;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0 0 37px 0;
+}
+
+.forms__text {
+  font-family: $Oswaldregular;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0 0 39px 0;
+}
+
+.forms__wpapper-mobile {
+  @include container-mobile;
+}

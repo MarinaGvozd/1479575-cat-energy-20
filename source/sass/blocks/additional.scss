@@ -1,0 +1,79 @@
+.additional {
+  @include container-mobile;
+  padding-top: 28px;
+  padding-bottom: 38px;
+}
+
+.additional__title {
+  margin: 0;
+  font-family: $Oswaldregular;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  border-bottom: 1px solid $light-grey;
+  padding-bottom: 30px;
+}
+
+.additional__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.additional__name {
+  margin: 0;
+  font-family: $Oswaldregular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional__item {
+  padding: 16px 0;
+  border-bottom: 1px solid $light-grey;
+}
+
+.additional__description {
+  display: flex;
+  justify-content: space-between;
+  font-family: $Arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional__button {
+  @include btn;
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 7px 0;
+}
+
+.additional__gift {
+  margin: 40px 0 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("..//../img/gift-photo-mobile@1x.jpg");
+  background-size: contain;
+  min-height: 290px;
+}
+
+.additional__gift-description {
+  font-family: $Arial;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  max-width: 161px;
+  margin: 0;
+  text-align: center;
+}
+
+.additional-_icon {
+  fill: $white;
+}

@@ -1,24 +1,30 @@
 .instruction {
-  padding: 25px 0 42px;
+  @include container-mobile;
+  padding-top: 25px;
+  padding-bottom: 17px;
 }
+
 .instruction__title {
-  font-family: "oswaldregular", "Arial", sans-serif;
+  font-family: $Oswaldregular;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   margin: 0;
 }
+
 .instruction__list {
   padding: 0;
   margin: 40px 0 0;
 }
+
 .instruction__text {
-  font-family: "Arial", sans-serif;
+  font-family: $Arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   margin: 0;
 }
+
 .instruction__item {
   list-style-type: none;
   margin-bottom: 28px;

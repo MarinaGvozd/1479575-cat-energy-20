@@ -1,9 +1,5 @@
-// .main-nav {
-//   display: none;
-// }
-
 .main-nav {
-  font-family: "oswaldmedium", "Arial", sans-serif;
+  font-family: $Oswaldmedium;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -11,6 +7,7 @@
   text-transform: uppercase;
   width: auto;
 }
+
 .main-nav__toggle {
   position: absolute;
   top: 12px;
@@ -22,11 +19,13 @@
   cursor: pointer;
   border: none;
 }
+
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .main-nav__link {
   display: block;
   text-align: center;

@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body class="page__body">
@@ -34,8 +34,9 @@
   </header>
 
   <main class="forms">
-    <h1 class="forms__title">Подбор программы</h1>
-    <p class="forms__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <div class="forms__wpapper-mobile">
+      <h1 class="forms__title">Подбор программы</h1>
+      <p class="forms__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="forms__inormation information" action="#" method="post">
       <fieldset class="information__cat">
         <legend class="visually-hidden">Информация о Коте</legend>
@@ -62,21 +63,21 @@
         <p class="information__item">
           <input class="information__radio visually-hidden" id="weight-loss" type="radio" value="weight-loss"
             name="program-type" checked>
-          <label class="information__label" for="weight-loss">
+          <label class="information__label--radio" for="weight-loss">
             Похудение
           </label>
         </p>
         <p class="information__item">
           <input class="information__radio visually-hidden" id="weight-gain" type="radio" value="weight-gain"
             name="program-type">
-          <label class="information__label" for="weight-gain">
+          <label class="information__label--radio" for="weight-gain">
             Набор массы
           </label>
         </p>
         <p class="information__item">
           <input class="information__radio visually-hidden" id="not-know" type="radio" value="not-know"
             name="program-type">
-          <label class="information__label" for="not-know">
+          <label class="information__label--radio" for="not-know">
             Не знаю (нужен ваш совет)
           </label>
         </p>
@@ -135,18 +136,20 @@
       <button class="information__submit" type="submit">Отправить заявку</button>
       <p class="information__question">— Обязательные поля</p>
     </form>
+  </div>
+
     <section class="contacts">
-      <div class="contacts__wrapper page-main__container">
-        <h2 class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Приглашаем к&nbspсотрудничеству дилеров!</h2>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="contacts__location">
-        <img src="img/map-m.png" height="362" width="320" alt="Карта с нашим адрессом. ">
+        <img class="contacts__map-picture" src="img/map-m.png" height="362" width="320" alt="Карта с нашим адрессом. ">
       </div>
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footers">
     <a class="page-footer__logo">
       <img src="./img/logo-footer-mobil.svg" width="128" height="24" alt="Логотип Cat Energy">
     </a>

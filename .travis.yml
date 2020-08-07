@@ -5,7 +5,3 @@ node_js:
 
 notifications:
   email: false
-
-ignore:
-  - *.md
-  - source/img/*
