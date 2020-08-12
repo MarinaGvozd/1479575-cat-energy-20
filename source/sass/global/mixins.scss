@@ -1,5 +1,5 @@
 @mixin btn {
-  font-family: $Oswaldregular;
+  font-family: $oswald;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
@@ -10,7 +10,7 @@
   text-align: center;
 }
 
-@mixin container-mobile {
+@mixin container {
   margin: 0 auto;
   box-sizing: border-box;
   padding-right: 20px;

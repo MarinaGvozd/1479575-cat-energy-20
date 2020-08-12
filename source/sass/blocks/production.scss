@@ -1,0 +1,90 @@
+.production {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+}
+
+.production__order {
+  @include btn;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 0;
+}
+
+.production__caption {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 14px;
+  max-width: 100px;
+}
+
+.production__line {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.production__table {
+  width: 50%;
+  margin-top: 21px;
+  border-collapse: collapse;
+}
+
+.production__value {
+  text-align: right;
+}
+
+.production__value,
+.production__index {
+  padding: 0;
+}
+
+.production__more {
+  margin: auto;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  margin-top: 75px;
+}
+
+.production__text {
+  margin: auto;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $grey-dark;
+  margin-bottom: 21px;
+}
+
+.production__all-products {
+  font-family: $oswald;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  background-color: $drop-grey;
+  color: $grey-dark;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 9px 0;
+}
+
+.production__picture {
+  display: block;
+}

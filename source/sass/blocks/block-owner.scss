@@ -1,0 +1,30 @@
+.block-owner {
+  padding-bottom: 10px;
+}
+
+.block-owner__subtitle {
+  width: 203px;
+  display: inline-block;
+  margin-bottom: 32px;
+  padding: 26px 22px 0 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.block-owner__item {
+  margin: 0;
+}
+
+.block-owner__label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.block-owner__text {
+  padding: 11px 16px 12px;
+}

@@ -4,18 +4,17 @@
 }
 
 .promo__title {
-  margin: 0;
-  font-family: $Oswaldregular;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: $white;
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
 }
 
 .promo__description {
   margin: 0;
-  font-family: $Oswaldregular;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -33,8 +32,8 @@
   margin: 0 20px;
 }
 
-.promp-mobile__wrapper {
-  @include container-mobile;
+.promo__wrapper {
+  @include container;
   padding-top: 29px;
   background: url("../../img/index-background-mobile@1x.jpg") 50% 0 no-repeat;
 }

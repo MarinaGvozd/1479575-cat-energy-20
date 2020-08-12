@@ -1,10 +1,10 @@
 .main-catalog {
-  @include container-mobile;
+  @include container;
   padding-top: 27px;
 }
 
 .main-catalog__title {
-  font-family: $Oswaldregular;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
