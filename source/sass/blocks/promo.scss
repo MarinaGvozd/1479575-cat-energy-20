@@ -1,6 +1,41 @@
 .promo {
-  text-align: center;
   padding-bottom: 23px;
+
+  @include container(20px, 20px, 320px);
+  padding-top: 29px;
+  background: url("../../img/index-background-mobile@1x.jpg") 50% 0 no-repeat;
+
+  @media (min-width: $tablet-width) {
+    @include container(30px, 30px, 768px);
+    background: $white;
+    min-height: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container(100px, 100px, 1440px);
+    background: $white;
+    position: relative;
+    z-index: 1;
+    min-height: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -90px;
+    right: 0;
+    width: 50%;
+    height: 696px;
+    background-color: #65a93c;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: -1;
+  }
 }
 
 .promo__title {
@@ -10,6 +45,20 @@
   line-height: 36px;
   color: $white;
   margin: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    width: 500px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+  }
 }
 
 .promo__description {
@@ -21,6 +70,20 @@
   text-transform: uppercase;
   color: $white;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
 }
 
 .promo__choose-program {
@@ -28,12 +91,32 @@
   display: block;
   font-size: 14px;
   line-height: 18px;
-  padding: 10px 0;
-  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    @include btn;
+    display: inline-block;
+    font-size: 20px;
+    padding: 16px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include btn;
+    display: inline-block;
+    font-size: 20px;
+    padding: 16px 27px;
+  }
 }
 
-.promo__wrapper {
-  @include container;
-  padding-top: 29px;
-  background: url("../../img/index-background-mobile@1x.jpg") 50% 0 no-repeat;
+.promo__img {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 65%;
+    left: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+  }
 }

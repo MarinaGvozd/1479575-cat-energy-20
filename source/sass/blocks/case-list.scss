@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
 }
 
 .case-list__item {
@@ -13,6 +17,10 @@
   text-align: center;
   border: 1px solid $light-grey;
   border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 3px;
+  }
 }
 
 .case-list__value {

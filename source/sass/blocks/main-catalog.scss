@@ -1,6 +1,14 @@
 .main-catalog {
-  @include container;
+  @include container(20px, 20px, 320px);
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    @include container(0, 0, 768px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container(100px, 100px, 1440px);
+  }
 }
 
 .main-catalog__title {

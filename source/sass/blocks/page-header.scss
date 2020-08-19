@@ -1,6 +1,5 @@
 .page-header {
   font-family: $oswald;
-  color: $black;
   background-color: $white;
   display: flex;
   flex-direction: column;
@@ -12,10 +11,12 @@
     flex-direction: row;
   }
 
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    // background: url("../../img/index-background-desktop@1x.jpg") 100% 0 no-repeat;
   }
 }
 

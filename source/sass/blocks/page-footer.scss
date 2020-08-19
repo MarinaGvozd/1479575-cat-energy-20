@@ -1,10 +1,22 @@
 .page-footers {
-  @include container;
+  @include container(20px, 20px, 320px);
   display: flex;
   flex-direction: column;
   background-color: $drop-grey;
   padding-top: 39px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    @include container(30px, 20px, 768px);
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container(100px, 100px, 1440px);
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo {

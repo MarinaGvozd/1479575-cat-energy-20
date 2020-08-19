@@ -1,5 +1,5 @@
 .additional {
-  @include container;
+  @include container(20px, 20px, 320px);
   padding-top: 28px;
   padding-bottom: 38px;
 }

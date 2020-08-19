@@ -1,8 +1,17 @@
 .example {
-  @include container;
+  @include container(20px, 20px, 320px);
   padding-top: 27px;
   padding-bottom: 25px;
   background-color: $grey-special;
+
+  @media (min-width: $tablet-width) {
+    @include container(30px, 30px, 768px);
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container(100px, 100px, 1440px);
+  }
 }
 
 .example__title {
@@ -21,7 +30,13 @@
   font-size: 14px;
   line-height: 18px;
   color: $grey-dark;
-  width: 270px;
+  width: 96%;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 35%;
+  }
 }
 
 .example__list {
@@ -37,6 +52,17 @@
   text-align: center;
   text-transform: uppercase;
   margin-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 192px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .example_item--small-cat {
@@ -53,4 +79,20 @@
   width: 320px;
   height: 240px;
   max-width: inherit;
+}
+
+.example__box {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.example__slider {
+  text-align: center;
 }

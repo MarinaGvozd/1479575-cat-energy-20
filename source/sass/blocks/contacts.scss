@@ -1,5 +1,5 @@
 .contacts__wrapper {
-  @include container;
+  @include container(20px, 20px, 320px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 22px;
@@ -26,4 +26,12 @@
 .contacts__map-picture {
   display: block;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
 }

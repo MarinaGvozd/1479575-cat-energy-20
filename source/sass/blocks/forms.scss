@@ -20,5 +20,5 @@
 }
 
 .forms__wpapper-mobile {
-  @include container;
+  @include container(20px, 20px, 320px);
 }

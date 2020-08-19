@@ -9,17 +9,17 @@
   border-top: 1px solid $grey-grey;
 
   @media (min-width: $tablet-width) {
-    font-family: $oswald;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    font-family: $oswald;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+    color: $white;
+    z-index: 2;
   }
 }
 
@@ -56,5 +56,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    z-index: 2;
   }
 }
