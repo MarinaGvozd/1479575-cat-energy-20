@@ -1,0 +1,25 @@
+.block-comment__item {
+  padding: 0;
+  margin: 0;
+}
+
+.block-comment__subtitle {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  padding: 10px 0;
+}
+
+.block-comment__text-area {
+  height: 150px;
+  width: 100%;
+  padding: 10px 13px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}

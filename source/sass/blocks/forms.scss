@@ -3,7 +3,7 @@
 }
 
 .forms__title {
-  font-family: $Oswaldregular;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -11,7 +11,7 @@
 }
 
 .forms__text {
-  font-family: $Oswaldregular;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -20,5 +20,5 @@
 }
 
 .forms__wpapper-mobile {
-  @include container-mobile;
+  @include container;
 }

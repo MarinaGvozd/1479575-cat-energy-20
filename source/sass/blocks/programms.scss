@@ -1,5 +1,5 @@
 .programms {
-  @include container-mobile;
+  @include container;
 }
 
 .programms__thin-cat,
@@ -13,7 +13,7 @@
 }
 
 .programms__title {
-  font-family: $Oswaldmedium;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 24px;
   line-height: 38px;
@@ -23,7 +23,7 @@
 }
 
 .programms__text {
-  font-family: $Arial;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -34,7 +34,7 @@
 .programms__btn-thin-cat,
 .programms__btn-fat-cat {
   text-decoration: none;
-  font-family: $Oswaldmedium;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;

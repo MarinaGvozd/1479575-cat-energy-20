@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -20,13 +20,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="main-nav__link">Подбор программы</a>
+            <a class="site-list__link">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -38,103 +38,103 @@
       <h1 class="forms__title">Подбор программы</h1>
       <p class="forms__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="forms__inormation information" action="#" method="post">
-      <fieldset class="information__cat">
+      <fieldset class="information__cat block-cat">
         <legend class="visually-hidden">Информация о Коте</legend>
-        <p class="information__item">
-          <label class="information__label">
+        <p class="block-cat__item">
+          <label class="block-cat__label">
             Имя:*
-            <input class="information__text" type="text" name="cat-name" placeholder="БАРСИК">
+            <input class="block-cat__text" type="text" name="cat-name" placeholder="БАРСИК">
           </label>
         </p>
-        <p class="information__item">
-          <label class="information__label">
+        <p class="block-cat__item">
+          <label class="block-cat__label">
             Вес (кг):*
-            <input class="information__text" type="text" name="cat-weight" placeholder="7">
+            <input class="block-cat__text" type="text" name="cat-weight" placeholder="7">
           </label>
         </p>
-        <p class="information__item">
-          <label class="information__label">Возраст (лет):
-            <input class="information__text" type="text" name="cat-age" placeholder="7">
+        <p class="block-cat__item">
+          <label class="block-cat__label">Возраст (лет):
+            <input class="block-cat__text" type="text" name="cat-age" placeholder="7">
           </label>
         </p>
       </fieldset>
-      <fieldset class="information__programm">
+      <fieldset class="information__programm block-programm">
         <legend class="visually-hidden">Вид программы</legend>
-        <p class="information__item">
-          <input class="information__radio visually-hidden" id="weight-loss" type="radio" value="weight-loss"
+        <p class="block-programm__item">
+          <input class="block-programm__radio visually-hidden" id="weight-loss" type="radio" value="weight-loss"
             name="program-type" checked>
-          <label class="information__label--radio" for="weight-loss">
+          <label class="block-programm__label block-programm__label--radio" for="weight-loss">
             Похудение
           </label>
         </p>
-        <p class="information__item">
-          <input class="information__radio visually-hidden" id="weight-gain" type="radio" value="weight-gain"
+        <p class="block-programm__item">
+          <input class="block-programm__radio visually-hidden" id="weight-gain" type="radio" value="weight-gain"
             name="program-type">
-          <label class="information__label--radio" for="weight-gain">
+          <label class="block-programm__label block-programm__label--radio" for="weight-gain">
             Набор массы
           </label>
         </p>
-        <p class="information__item">
-          <input class="information__radio visually-hidden" id="not-know" type="radio" value="not-know"
+        <p class="block-programm__item">
+          <input class="block-programm__radio visually-hidden" id="not-know" type="radio" value="not-know"
             name="program-type">
-          <label class="information__label--radio" for="not-know">
+          <label class="block-programm__label block-programm__label--radio" for="not-know">
             Не знаю (нужен ваш совет)
           </label>
         </p>
       </fieldset>
-      <fieldset class="information__owner">
-        <legend class="information__subtitle">Контактные данные (владельца кота)</legend>
-        <p class="information__item">
-          <label class="information__label">
+      <fieldset class="information__owner block-owner">
+        <legend class="block-owner__subtitle">Контактные данные (владельца кота)</legend>
+        <p class="block-owner__item">
+          <label class="block-owner__label">
             e-mail:*
-            <input class="information__text" type="email" name="e-mail" placeholder="kuklachev@gmail.com">
+            <input class="block-owner__text" type="email" name="e-mail" placeholder="kuklachev@gmail.com">
           </label>
         </p>
-        <p class="information__item">
-          <label class="information__label">Телефон:*
-            <input class="information__text" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
+        <p class="block-owner__item">
+          <label class="block-owner__label">Телефон:*
+            <input class="block-owner__text" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
           </label>
         </p>
       </fieldset>
-      <fieldset class="information__comment">
-        <legend class="information__subtitle">Комментарий</legend>
-        <p class="information__item">
+      <fieldset class="information__comment block-comment">
+        <legend class="block-comment__subtitle">Комментарий</legend>
+        <p class="block-comment__item">
           <label class="visually-hidden" for="textarea"></label>
-          <textarea class="information__text-area" id="textarea" name="comment"
+          <textarea class="block-comment__text-area" id="textarea" name="comment"
             placeholder="Расскажите обо всех повадках кота"></textarea></p>
       </fieldset>
-      <fieldset class="information__add">
-        <legend class="information__subtitle">Дополнительно</legend>
-        <p class="information__item">
-          <input class="information__checkbox visually-hidden" id="sweetener" type="checkbox" value="sweetener"
+      <fieldset class="information__add block-add">
+        <legend class="block-add__subtitle">Дополнительно</legend>
+        <p class="block-add__item">
+          <input class="block-add__checkbox visually-hidden" id="sweetener" type="checkbox" value="sweetener"
             name="additional" checked>
-          <label class="information__label" for="sweetener"></label>
+          <label class="block-add__label" for="sweetener"></label>
           Сахарозаменитель
           </label>
         </p>
-        <p class="information__item">
-          <input class="information__checkbox visually-hidden" id="water" type="checkbox" value="water"
+        <p class="block-add__item">
+          <input class="block-add__checkbox visually-hidden" id="water" type="checkbox" value="water"
             name="additional">
-          <label class="information__label" for="water">
+          <label class="block-add__label" for="water">
             Питьевая вода
           </label>
         </p>
-        <p class="information__item">
-          <input class="information__checkbox visually-hidden" id="milk" type="checkbox" value="milk" name="additional">
-          <label class="information__label form__label--checkbox" for="milk">
+        <p class="block-add__item">
+          <input class="block-add__checkbox visually-hidden" id="milk" type="checkbox" value="milk" name="additional">
+          <label class="block-add__label form__label--checkbox" for="milk">
             Молоко
           </label>
         </p>
-        <p class="information__item">
-          <input class="information__checkbox visually-hidden" id="vitamins" type="checkbox" value="vitamins"
+        <p class="block-add__item">
+          <input class="block-add__checkbox visually-hidden" id="vitamins" type="checkbox" value="vitamins"
             name="additional">
-          <label class="information__label" for="vitamins">
+          <label class="block-add__label" for="vitamins">
             Витамины
           </label>
         </p>
       </fieldset>
       <button class="information__submit" type="submit">Отправить заявку</button>
-      <p class="information__question">— Обязательные поля</p>
+      <p class="information__question"><sup>*</sup> — Обязательные поля</p>
     </form>
   </div>
 

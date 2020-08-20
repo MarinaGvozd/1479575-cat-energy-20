@@ -1,11 +1,26 @@
 .main-nav {
-  font-family: $Oswaldmedium;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   width: auto;
+  border-top: 1px solid $grey-grey;
+
+  @media (min-width: $tablet-width) {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-nav__toggle {
@@ -18,19 +33,28 @@
   height: 50px;
   cursor: pointer;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
 
-.main-nav__link {
-  display: block;
-  text-align: center;
-  padding: 22px 26px;
-  color: $black;
-  text-decoration: none;
-  border-bottom: 1px solid $grey-grey;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
