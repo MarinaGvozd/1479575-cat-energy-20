@@ -25,7 +25,7 @@
 }
 
 .production__line {
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -60,7 +60,7 @@
 
 .production__text {
   margin: auto;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;

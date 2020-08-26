@@ -15,7 +15,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     color: $white;
@@ -25,20 +24,17 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 12px;
+  top: 23px;
   right: 23px;
   z-index: 2;
   display: block;
-  width: 70px;
-  height: 50px;
   cursor: pointer;
   border: none;
+  width: 18px;
+  height: 18px;
+  background: url("../img/icon-close.svg") no-repeat 0 0;
 
   @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -54,8 +50,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
     z-index: 2;
   }
 }

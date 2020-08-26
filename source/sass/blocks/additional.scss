@@ -38,7 +38,7 @@
 .additional__description {
   display: flex;
   justify-content: space-between;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -64,7 +64,7 @@
 }
 
 .additional__gift-description {
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

@@ -5,12 +5,14 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
-    "browser-sync": "^2.26.10",
+    "browser-sync": "2.26.10",
     "gulp": "4.0.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "8.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "2.6.5",
+    "gulp-svgstore": "^7.0.1",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
@@ -38,7 +40,8 @@
     "node": "12.18.2"
   },
   "dependencies": {
-    "normalize-scss": "^7.0.1",
-    "normalize.scss": "^0.1.0"
+    "normalize-scss": "7.0.1",
+    "normalize.scss": "0.1.0",
+    "svgstore": "3.0.0-2"
   }
 }

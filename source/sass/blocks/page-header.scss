@@ -10,20 +10,12 @@
     justify-content: space-between;
     flex-direction: row;
   }
-
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    // background: url("../../img/index-background-desktop@1x.jpg") 100% 0 no-repeat;
-  }
 }
 
 .page-header__logo {
   height: 38px;
   max-width: 190px;
-  padding: 14px 20px 14px;
+  padding: 11px 20px 14px;
 
   @media (min-width: $tablet-width) {
     height: 51px;

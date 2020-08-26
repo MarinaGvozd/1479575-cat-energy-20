@@ -3,7 +3,7 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    @include container(0, 0, 768px);
+    @include container(30px, 30px, 768px);
   }
 
   @media (min-width: $desktop-width) {

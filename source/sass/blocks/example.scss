@@ -1,7 +1,7 @@
 .example {
   @include container(20px, 20px, 320px);
   padding-top: 27px;
-  padding-bottom: 25px;
+  padding-bottom: 80px;
   background-color: $grey-special;
 
   @media (min-width: $tablet-width) {
@@ -25,7 +25,7 @@
 
 .example__description {
   margin: 0 0 25px 0;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -52,6 +52,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-top: 33px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     max-width: 192px;
@@ -78,6 +79,7 @@
 .example__big-cat {
   width: 320px;
   height: 240px;
+  margin-left: -20px;
   max-width: inherit;
 }
 
@@ -88,7 +90,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     flex-direction: column;
   }
 }

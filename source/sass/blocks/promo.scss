@@ -1,8 +1,9 @@
 .promo {
+  text-align: center;
   padding-bottom: 23px;
 
   @include container(20px, 20px, 320px);
-  padding-top: 29px;
+  padding-top: 27px;
   background: url("../../img/index-background-mobile@1x.jpg") 50% 0 no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -13,10 +14,8 @@
 
   @media (min-width: $desktop-width) {
     @include container(100px, 100px, 1440px);
-    background: $white;
     position: relative;
     z-index: 1;
-    min-height: 660px;
   }
 }
 
@@ -29,12 +28,16 @@
     right: 0;
     width: 50%;
     height: 696px;
-    background-color: #65a93c;
+    background-color: $green-but;
     background-image: url("../../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -52,12 +55,6 @@
     color: $black;
     width: 500px;
     text-align: left;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
-    color: $black;
   }
 }
 
@@ -77,13 +74,6 @@
     line-height: 20px;
     text-align: left;
   }
-
-  @media (min-width: $desktop-width) {
-    color: $black;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: left;
-  }
 }
 
 .promo__choose-program {
@@ -91,16 +81,9 @@
   display: block;
   font-size: 14px;
   line-height: 18px;
+  padding: 11px 15px;
 
   @media (min-width: $tablet-width) {
-    @include btn;
-    display: inline-block;
-    font-size: 20px;
-    padding: 16px 27px;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include btn;
     display: inline-block;
     font-size: 20px;
     padding: 16px 27px;
@@ -108,6 +91,8 @@
 }
 
 .promo__img {
+  display: block;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 65%;
@@ -115,7 +100,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     top: 25%;
     left: 40%;
   }
