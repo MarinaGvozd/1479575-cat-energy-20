@@ -8,5 +8,22 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+    margin-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 35px;
   }
 }

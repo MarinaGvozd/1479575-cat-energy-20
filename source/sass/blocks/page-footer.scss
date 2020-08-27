@@ -6,9 +6,11 @@
   padding-top: 39px;
 
   @media (min-width: $tablet-width) {
-    @include container(30px, 20px, 768px);
+    @include container(30px, 30px, 768px);
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +23,11 @@
   max-width: 128px;
   align-self: center;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .page-footer__link {
@@ -30,6 +37,10 @@
   font-size: 16px;
   line-height: 18px;
   color: $grey-dark;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
 }
 
 .page-footer__copyright {

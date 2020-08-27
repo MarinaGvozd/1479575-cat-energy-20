@@ -4,6 +4,12 @@
   grid-template-columns: 1fr 1fr;
   padding-top: 30px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include container(70px, 70px, 768px);
+    padding-top: 63px;
+    padding-bottom: 57px;
+  }
 }
 
 .contacts__title {
@@ -13,6 +19,12 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 160px;
+  }
 }
 
 .contacts__text {
@@ -21,14 +33,31 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+    margin-left: auto;
+  }
 }
 
 .contacts__map-picture {
+  margin: 0 auto;
   display: block;
   width: 320px;
   height: 362px;
 
   @media (min-width: $tablet-width) {
     height: 400px;
+    width: 100%;
+  }
+}
+
+.contacts__span {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 20px;
   }
 }

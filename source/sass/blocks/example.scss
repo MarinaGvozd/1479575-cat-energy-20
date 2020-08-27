@@ -7,10 +7,12 @@
   @media (min-width: $tablet-width) {
     @include container(30px, 30px, 768px);
     background-color: $white;
+    padding-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
-    @include container(100px, 100px, 1440px);
+    background-color: $drop-grey;
+    padding-top: 0;
   }
 }
 
@@ -21,6 +23,19 @@
   font-size: 36px;
   line-height: 40px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 63px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 47px;
+    margin: 0;
+    padding-bottom: 73px;
+    background-color: $white;
+  }
 }
 
 .example__description {
@@ -32,9 +47,13 @@
   color: $grey-dark;
   width: 96%;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin: 0 0 53px 0;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 35%;
   }
 }
@@ -57,8 +76,9 @@
   @media (min-width: $tablet-width) {
     max-width: 192px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 27px;
     text-align: right;
+    margin-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,6 +101,12 @@
   height: 240px;
   margin-left: -20px;
   max-width: inherit;
+
+  @media (min-width: $tablet-width) {
+    width: 665px;
+    height: 520px;
+    margin-left: 0;
+  }
 }
 
 .example__box {
@@ -96,4 +122,9 @@
 
 .example__slider {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 30px;
+  }
 }
