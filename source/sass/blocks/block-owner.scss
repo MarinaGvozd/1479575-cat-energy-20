@@ -3,7 +3,6 @@
 }
 
 .block-owner__subtitle {
-  width: 203px;
   display: inline-block;
   margin-bottom: 32px;
   padding: 26px 22px 0 0;
@@ -27,4 +26,11 @@
 
 .block-owner__text {
   padding: 11px 16px 12px;
+}
+
+.block-add__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

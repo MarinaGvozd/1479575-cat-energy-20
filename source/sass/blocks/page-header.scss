@@ -1,6 +1,5 @@
 .page-header {
   font-family: $oswald;
-  color: $black;
   background-color: $white;
   display: flex;
   flex-direction: column;
@@ -11,18 +10,12 @@
     justify-content: space-between;
     flex-direction: row;
   }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
 }
 
 .page-header__logo {
   height: 38px;
   max-width: 190px;
-  padding: 14px 20px 14px;
+  padding: 11px 20px 14px;
 
   @media (min-width: $tablet-width) {
     height: 51px;

@@ -1,9 +1,9 @@
 .contacts__wrapper {
-  @include container;
+  @include container(20px, 20px, 320px);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 22px;
-  padding-bottom: 27px;
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 
 .contacts__title {
@@ -11,13 +11,13 @@
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
 }
 
 .contacts__text {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -25,5 +25,10 @@
 
 .contacts__map-picture {
   display: block;
-  width: 100%;
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

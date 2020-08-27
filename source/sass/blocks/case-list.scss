@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
 }
 
 .case-list__item {
@@ -13,6 +17,10 @@
   text-align: center;
   border: 1px solid $light-grey;
   border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 3px;
+  }
 }
 
 .case-list__value {
@@ -24,7 +32,7 @@
   background-color: $grey-special;
   padding: 0 10px;
   margin: 0 10px -15px;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;

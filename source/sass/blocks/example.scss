@@ -1,8 +1,17 @@
 .example {
-  @include container;
+  @include container(20px, 20px, 320px);
   padding-top: 27px;
-  padding-bottom: 25px;
+  padding-bottom: 80px;
   background-color: $grey-special;
+
+  @media (min-width: $tablet-width) {
+    @include container(30px, 30px, 768px);
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container(100px, 100px, 1440px);
+  }
 }
 
 .example__title {
@@ -16,12 +25,18 @@
 
 .example__description {
   margin: 0 0 25px 0;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $grey-dark;
-  width: 270px;
+  width: 96%;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 35%;
+  }
 }
 
 .example__list {
@@ -37,6 +52,18 @@
   text-align: center;
   text-transform: uppercase;
   margin-top: 33px;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 192px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .example_item--small-cat {
@@ -52,5 +79,21 @@
 .example__big-cat {
   width: 320px;
   height: 240px;
+  margin-left: -20px;
   max-width: inherit;
+}
+
+.example__box {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.example__slider {
+  text-align: center;
 }

@@ -10,10 +10,26 @@
   text-align: center;
 }
 
-@mixin container {
+// @mixin container (110px, 110px) {
+//   margin: 0 auto;
+//   box-sizing: border-box;
+//   padding-right: $110px;
+//   padding-left: $110px;
+//   min-width: $desktop-width;
+// }
+
+// @mixin container (30px, 30px) {
+//   margin: 0 auto;
+//   box-sizing: border-box;
+//   padding-right: $30px;
+//   padding-left: $30px;
+//   min-width: $tablet-width;
+// }
+
+@mixin container ($padLeft, $padRight, $minWidth) {
   margin: 0 auto;
   box-sizing: border-box;
-  padding-right: 20px;
-  padding-left: 20px;
-  min-width: 320px;
+  padding-right: $padRight;
+  padding-left: $padLeft;
+  min-width: $minWidth;
 }

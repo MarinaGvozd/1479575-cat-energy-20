@@ -22,9 +22,54 @@
 }
 
 .information__question {
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+}
+
+.information {
+  @media (min-width: $desktop-width) {
+    display: grid;
+  }
+}
+
+.information__cat {
+  @media (min-width: $tablet-width) {
+    border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
+.information__programm {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+.information__owner {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+.information__comment {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+.information__add {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+  }
 }

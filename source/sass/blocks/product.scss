@@ -1,0 +1,17 @@
+.product {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.product__item {
+  @media (min-width: $tablet-width) {
+    width: 41%;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
+  }
+}

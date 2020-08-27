@@ -1,23 +1,46 @@
 .page-footers {
-  @include container;
+  @include container(20px, 20px, 320px);
   display: flex;
   flex-direction: column;
   background-color: $drop-grey;
   padding-top: 39px;
-  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    @include container(30px, 20px, 768px);
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container(100px, 100px, 1440px);
+  }
 }
 
 .page-footer__logo {
   height: 24px;
   max-width: 128px;
   align-self: center;
+  padding-bottom: 30px;
 }
 
 .page-footer__link {
   text-decoration: none;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $grey-dark;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 0;
+}
+
+.page-footer__company-icon {
+  width: 34px;
+  height: 37px;
+  fill: #666666;
 }

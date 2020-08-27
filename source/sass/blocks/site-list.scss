@@ -1,16 +1,12 @@
 .site-list__link {
   display: block;
   text-align: center;
-  padding: 22px 26px;
+  padding: 23px 26px;
   color: $black;
   text-decoration: none;
   border-bottom: 1px solid $grey-grey;
 
   @media (min-width: $tablet-width) {
-    border: none;
-  }
-
-  @media (min-width: $desktop-width) {
     border: none;
   }
 }
