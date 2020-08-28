@@ -56,4 +56,9 @@
     line-height: 14px;
     background-color: $white;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 13px 9px -4px;
+    background-color: $drop-grey;
+  }
 }

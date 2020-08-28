@@ -1,9 +1,10 @@
 .main-catalog {
   @include container(20px, 20px, 320px);
-  padding-top: 27px;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     @include container(30px, 30px, 768px);
+    padding-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,6 +20,12 @@
   margin: 0;
   padding: 0 0 41px 0;
   border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-catalog__list {

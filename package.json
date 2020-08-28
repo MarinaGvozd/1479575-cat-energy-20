@@ -41,7 +41,6 @@
   },
   "dependencies": {
     "normalize-scss": "7.0.1",
-    "normalize.scss": "0.1.0",
     "svgstore": "3.0.0-2"
   }
 }

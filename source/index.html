@@ -46,7 +46,8 @@
         <picture>
           <source media="(min-width: 1440px)"
             srcset="./img/index-can-desktop@1x.png 1х, ./img/index-can-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.jpg 1х, ./img/index-can-tablet@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/index-can-tablet@1x.jpg 1х, ./img/index-can-tablet@2x.jpg 2x">
           <img class="promo__img" src="./img/index-can-mobile@1x.png" srcset="./img/index-can-mobile@2x.png 2x"
             width="280" height="270" alt="Натуральный корм для котов.">
         </picture>
@@ -110,25 +111,28 @@
     <section class="example">
 
       <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-        16
-        часов в день.</p>
-      <div class="example__box">
+      <div class="example__wrapper">
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+          16
+          часов в день.</p>
+        <div class="example__box">
 
-        <ul class="example__list case-list">
-          <li class="case-list__item">
-            <p class="case-list__value">5 кг</p>
-            <p class="case-list__index">снижение веса</p>
-          </li>
-          <li class="case-list__item">
-            <p class="case-list__value">60 дней</p>
-            <p class="case-list__index">затрачено времени</p>
-          </li>
-        </ul>
+          <ul class="example__list case-list">
+            <li class="case-list__item">
+              <p class="case-list__value">5 кг</p>
+              <p class="case-list__index">снижение веса</p>
+            </li>
+            <li class="case-list__item">
+              <p class="case-list__value">60 дней</p>
+              <p class="case-list__index">затрачено времени</p>
+            </li>
+          </ul>
 
-        <p class="example__desc">Затраты на питание: 15 000 руб.</p>
+          <p class="example__desc">Затраты на питание: <span>15 000 руб.</span></p>
+        </div>
       </div>
+
       <div class="example__slider slider">
         <ul class="example__items slider__items">
           <li class="example__item example__item--fat-cat slider__item">
@@ -158,14 +162,20 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Приглашаем к&nbspсотрудничеству дилеров!</h2>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__span">Санкт-Петербург</span></p>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__span">Санкт-Петербург</span>
+        </p>
       </div>
-      <picture>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe class="contacts__map-picture"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002783!2d30.320858715677197!3d59.938719169054714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1593379356107!5m2!1sru!2sua"
+        width="320" height="360" allowfullscreen
+        title="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 "></iframe>
+      <!-- <picture>
         <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png">
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png">
-        <img class="contacts__map-picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png"
-          height="362" width="320" alt="Карта с нашим адрессом. ">
-      </picture>
+        <img class="contacts__map-picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png" height="362"
+          width="320" alt="Карта с нашим адрессом. ">
+      </picture> -->
     </section>
   </main>
   <footer class="page-footers">
@@ -203,7 +213,7 @@
         <use xlink:href="img/sprite.svg#htmlacademy"></use>
       </svg>
     </div>
-    </div>
+  </footer>
 </body>
 
 </html>

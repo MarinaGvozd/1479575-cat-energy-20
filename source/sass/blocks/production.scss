@@ -3,13 +3,17 @@
   flex-wrap: wrap;
   padding-bottom: 22px;
   border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .production__order {
   @include btn;
   width: 100%;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
   padding: 10px 0;
 }
 
@@ -33,7 +37,7 @@
 
 .production__table {
   width: 50%;
-  margin-top: 21px;
+  margin-top: 22px;
   border-collapse: collapse;
 }
 
@@ -55,7 +59,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 8px;
-  margin-top: 75px;
+  margin-top: 82px;
 }
 
 .production__text {
@@ -87,4 +91,16 @@
 
 .production__picture {
   display: block;
+}
+
+.production__img {
+  display: block;
+  width: 140px;
+  height: 144px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
 }
