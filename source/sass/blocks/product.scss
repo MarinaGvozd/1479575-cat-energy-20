@@ -2,16 +2,31 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 .product__item {
   @media (min-width: $tablet-width) {
-    width: 41%;
-    padding: 0 30px;
+    margin-top: 139px;
+    width: 35%;
+    background-color: $drop-grey;
+    height: 430px;
+    padding: 0 38px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 20%;
+    width: 18%;
+  }
+}
+
+.product__item--plus {
+  background-color: $white;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    padding: 0 38px;
+    outline: 1px solid rgba(205, 205, 205, 0.5);
   }
 }

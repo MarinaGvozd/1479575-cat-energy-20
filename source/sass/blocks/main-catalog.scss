@@ -18,13 +18,15 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  padding: 0 0 41px 0;
+  padding-bottom: 41px;
   border-bottom: 1px solid rgba(205, 205, 205, 0.5);
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     border: none;
     font-size: 60px;
     line-height: 60px;
+    margin: 0 0 28px 0;
   }
 }
 
