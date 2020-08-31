@@ -7,15 +7,19 @@
   background: url("../../img/index-background-mobile@1x.jpg") 50% 0 no-repeat;
 
   @media (min-width: $tablet-width) {
-    @include container(30px, 30px, 768px);
+    @include container(118px, 30px, 768px);
+    text-align: left;
     background: $white;
-    min-height: 600px;
+    padding-top: 60px;
+    min-height: 860px;
   }
 
   @media (min-width: $desktop-width) {
-    @include container(100px, 100px, 1440px);
+    @include container(190px, 100px, 1440px);
     position: relative;
     z-index: 1;
+    padding-top: 110px;
+    min-height: 664px;
   }
 }
 
@@ -24,7 +28,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: -90px;
+    top: -113px;
     right: 0;
     width: 50%;
     height: 696px;
@@ -53,8 +57,9 @@
     font-size: 60px;
     line-height: 60px;
     color: $black;
-    width: 500px;
+    max-width: 430px;
     text-align: left;
+    margin: 0 0 40px 0;
   }
 }
 
@@ -66,13 +71,14 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $white;
-  margin-bottom: 29px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     color: $black;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+    margin-bottom: 50px;
   }
 }
 
@@ -86,21 +92,32 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     font-size: 20px;
-    padding: 16px 27px;
+    padding: 18px 27px;
+    margin-left: -7px;
+    position: absolute;
+    z-index: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 26px;
+    margin-left: -0;
   }
 }
 
 .promo__img {
-  display: block;
-
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 65%;
-    left: 30%;
+    top: 341px;
+    left: 30px;
+    width: 709px;
+    height: 609px;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    top: 25%;
-    left: 40%;
+    width: 552px;
+    height: 499px;
+    top: 4%;
+    left: 39%;
   }
 }

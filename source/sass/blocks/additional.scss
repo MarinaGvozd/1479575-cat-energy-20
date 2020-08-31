@@ -1,7 +1,13 @@
 .additional {
   @include container(20px, 20px, 320px);
-  padding-top: 28px;
-  padding-bottom: 38px;
+  padding-top: 29px;
+  padding-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    @include container(30px, 30px, 768px);
+    padding-top: 66px;
+    padding-bottom: 76px;
+  }
 }
 
 .additional__title {
@@ -12,13 +18,24 @@
   line-height: 24px;
   color: $black;
   border-bottom: 1px solid $light-grey;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 38px;
+    border: none;
+  }
 }
 
 .additional__list {
-  margin: 0;
+  margin: 0 0 37px 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .additional__name {
@@ -28,11 +45,24 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional__item {
-  padding: 16px 0;
+  padding: 13px 0 18px 0;
   border-bottom: 1px solid $light-grey;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 11px 37px 28px;
+  }
 }
 
 .additional__description {
@@ -42,6 +72,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 225px;
+    justify-content: flex-end;
+  }
 }
 
 .additional__button {
@@ -49,18 +87,35 @@
   display: block;
   font-size: 16px;
   line-height: 24px;
-  padding: 7px 0;
+  padding: 8px 0;
+
+  @media (min-width: $tablet-width) {
+    flex-shrink: 1;
+    width: 100%;
+    margin-top: 7px;
+  }
 }
 
 .additional__gift {
-  margin: 40px 0 35px;
+  padding: 65px 0 43px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url("..//../img/gift-photo-mobile@1x.jpg");
-  background-size: contain;
-  min-height: 290px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $green-but;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 66px 90px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    margin-top: 69px;
+  }
 }
 
 .additional__gift-description {
@@ -72,8 +127,34 @@
   max-width: 161px;
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 34px;
+    text-align: left;
+  }
 }
 
 .additional-_icon {
   fill: $white;
+  margin-bottom: 64px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.additional-wrapper {
+  @media (min-width: $tablet-width) {
+    border: 1px solid $light-grey;
+    margin-top: 47px;
+  }
+}
+
+.additional__cost {
+  @media (min-width: $tablet-width) {
+    margin-left: 55px;
+  }
 }
