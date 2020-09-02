@@ -24,19 +24,18 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="index.html">Главная</a>
+            <a class="site-list__link site-list__link--form" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link site-list__link--form" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link">Подбор программы</a>
+            <a class="site-list__link site-list__link--form">Подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-
   <main class="forms">
     <div class="forms__wpapper-mobile">
       <h1 class="forms__title">Подбор программы</h1>
@@ -88,17 +87,20 @@
         </fieldset>
         <fieldset class="information__owner block-owner">
           <legend class="block-owner__subtitle">Контактные данные (владельца кота)</legend>
-          <p class="block-owner__item">
-            <label class="block-owner__label">
-              e-mail:*
-              <input class="block-owner__text" type="email" name="e-mail" placeholder="kuklachev@gmail.com">
-            </label>
-          </p>
-          <p class="block-owner__item">
-            <label class="block-owner__label">Телефон:*
-              <input class="block-owner__text" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
-            </label>
-          </p>
+          <div class="block-owner__wrapper">
+            <p class="block-owner__item">
+              <label class="block-owner__label">
+                e-mail:*
+                <input class="block-owner__text" type="email" name="e-mail" placeholder="kuklachev@gmail.com">
+              </label>
+            </p>
+            <p class="block-owner__item">
+              <label class="block-owner__label">Телефон:*
+                <input class="block-owner__text block-owner__text--tel" type="tel" name="telephone"
+                  placeholder="8 (960) 900-60-90">
+              </label>
+            </p>
+          </div>
         </fieldset>
         <fieldset class="information__comment block-comment">
           <legend class="block-comment__subtitle">Комментарий</legend>
@@ -140,23 +142,24 @@
             </p>
           </div>
         </fieldset>
-        <button class="information__submit" type="submit">Отправить заявку</button>
-        <p class="information__question"><sup>*</sup> — Обязательные поля</p>
+        <div class="information__add-wrapper">
+          <button class="information__submit" type="submit">Отправить заявку</button>
+          <p class="information__question"><sup>*</sup> — Обязательные поля</p>
+        </div>
       </form>
     </div>
 
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper contacts__wrapper--bg">
         <h2 class="contacts__title">Приглашаем к&nbspсотрудничеству дилеров!</h2>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__span">Санкт-Петербург</span>
+        </p>
       </div>
-      <div class="contacts__location">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <iframe class="contacts__map-picture"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002783!2d30.320858715677197!3d59.938719169054714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1593379356107!5m2!1sru!2sua"
-          width="320" height="360" allowfullscreen
-          title="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 "></iframe>
-        <!-- <img class="contacts__map-picture" src="img/map-m.png" height="362" width="320" alt="Карта с нашим адрессом. ">
+      <iframe class="contacts__map-picture"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002783!2d30.320858715677197!3d59.938719169054714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1593379356107!5m2!1sru!2sua"
+        width="320" height="360" allowfullscreen
+        title="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 "></iframe>
+      <!-- <img class="contacts__map-picture" src="img/map-m.png" height="362" width="320" alt="Карта с нашим адрессом. ">
       </div> -->
     </section>
   </main>
@@ -197,6 +200,7 @@
       </svg>
     </div>
   </footer>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

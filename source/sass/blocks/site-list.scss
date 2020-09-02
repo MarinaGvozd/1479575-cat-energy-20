@@ -16,6 +16,13 @@
   }
 }
 
+.site-list__link--catalog,
+.site-list__link--form {
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
+}
+
 .site-list__item {
   @media (min-width: $tablet-width) {
     border: none;

@@ -5,9 +5,10 @@
   background-color: $grey-special;
 
   @media (min-width: $tablet-width) {
-    @include container(30px, 30px, 768px);
+    @include container(0, 0, 768px);
     background-color: $white;
     padding-top: 11px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,7 +28,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 63px 0;
+    margin: 35px 0 63px 30px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -113,14 +114,16 @@
   max-width: inherit;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     width: 665px;
     height: 520px;
     margin-left: 0;
+    top: -170px;
+    right: 55px;
   }
 
   @media (min-width: $desktop-width) {
     right: 89px;
-    position: absolute;
     top: -253px;
   }
 }
@@ -139,26 +142,33 @@
 .example__slider {
   text-align: center;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 56px;
-    padding-bottom: 30px;
-  }
-
   @media (min-width: $desktop-width) {
     grid-row: 2/3;
     grid-column: 2/3;
+    padding-top: 56px;
+    padding-bottom: 30px;
   }
 }
 
 .example__wrapper {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    padding: 0 30px 228px 30px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
+    padding: 0 0 0 110px;
     grid-row: 2/3;
     grid-column: 1/2;
   }
 }
 
 .example__before {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    position: relative;
+    background-color: $grey-special;
+    min-height: 462px;
+  }
+
   @media (min-width: $desktop-width) {
     position: relative;
   }

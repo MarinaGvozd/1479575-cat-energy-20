@@ -8,7 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include container(100px, 100px, 1440px);
+    @include container(110px, 110px, 1440px);
+    padding-top: 75px;
   }
 }
 

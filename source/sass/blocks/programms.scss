@@ -38,6 +38,22 @@
   }
 }
 
+.programms__thin-cat::after {
+  content: "";
+  margin-left: 11px;
+  margin-top: -3px;
+  vertical-align: middle;
+  width: 25px;
+  height: 11px;
+  display: inline-block;
+  background: url("../../img/icon-right-arrow-long.svg") no-repeat;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 22px;
+    margin-top: -5px;
+  }
+}
+
 .programms__fat-cat {
   @media (min-width: $tablet-width) {
     padding: 75px 91px 60px 52px;
@@ -46,6 +62,22 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0 0 61px 52px;
+  }
+}
+
+.programms__fat-cat::after {
+  content: "";
+  margin-left: 11px;
+  margin-top: -3px;
+  vertical-align: middle;
+  width: 25px;
+  height: 11px;
+  display: inline-block;
+  background: url("../../img/icon-right-arrow-long.svg") no-repeat;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 22px;
+    margin-top: -5px;
   }
 }
 
@@ -158,8 +190,8 @@
     height: 192px;
   }
 
-  @media (min-width: $tablet-width) {
-    top: 49%;
+  @media (min-width: $desktop-width) {
+    top: 50%;
     width: 70px;
     height: 97px;
   }
@@ -172,9 +204,9 @@
     top: 50%;
   }
 
-  @media (min-width: $tablet-width) {
-    top: 43%;
-    width: 134px;
-    height: 56px;
+  @media (min-width: $desktop-width) {
+    top: 50%;
+    width: 140px;
+    height: 192px;
   }
 }
