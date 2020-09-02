@@ -19,9 +19,20 @@
 
     &::after {
       content: "";
-      right: -70px;
-      top: 48px;
       width: 123%;
+      right: -71px;
+      top: 48px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 38px;
+
+    &::after {
+      content: "";
+      width: 118%;
+      right: -109px;
+      top: 21px;
     }
   }
 }
@@ -48,7 +59,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 44%;
+    width: 46%;
+    padding-top: 0;
   }
 }
 

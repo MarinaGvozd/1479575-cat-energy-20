@@ -36,7 +36,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 37px;
+    margin-bottom: 27px;
     padding: 9px 22px 0 18px;
     height: 175px;
   }
@@ -62,7 +62,7 @@
     padding: 0 0 20px 0;
 
     &::before {
-      right: -69px;
+      right: -71px;
       content: "";
       display: block;
       position: absolute;
@@ -75,6 +75,15 @@
 
     &::after {
       display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      width: 118%;
+      right: -109px;
+      top: 31px;
     }
   }
 }
