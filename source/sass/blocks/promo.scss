@@ -89,6 +89,14 @@
   line-height: 18px;
   padding: 11px 15px;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     font-size: 20px;

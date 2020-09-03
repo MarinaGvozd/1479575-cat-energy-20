@@ -43,6 +43,11 @@
   }
 }
 
+.production__link {
+  color: $black;
+  text-decoration: none;
+}
+
 .production__line {
   font-family: $arial;
   font-weight: 400;
