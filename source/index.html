@@ -133,7 +133,7 @@
         </div>
       </div>
 
-      <div class="example__slider slider">
+      <div class="example__slider slider slider--before">
         <ul class="example__items slider__items">
           <li class="example__item example__item--fat-cat slider__item">
             <div class="example__before">
@@ -148,7 +148,7 @@
           <li class="example__item example_item--small-cat slider__item">
             <div class="example__after">
               <picture>
-                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                 <img class="example__little-cat" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
                   alt="Котик после правильного питания" width="251" height="240">
@@ -156,6 +156,13 @@
             </div>
           </li>
         </ul>
+        <div class="slider__toggles">
+          <button class="slider__toggle slider__toggle--before" type="button" aria-label="Котик, который много ел.">Было</button>
+          <div class="slider__indicator">
+            <button class="slider__control-handle" aria-label="Котик изменяется."></button>
+          </div>
+          <button class="slider__toggle slider__toggle--after" type="button" aria-label="Котик, который следит за своим питанием.">Стало</button>
+        </div>
       </div>
 
     </section>

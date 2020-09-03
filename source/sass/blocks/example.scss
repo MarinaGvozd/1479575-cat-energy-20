@@ -1,15 +1,27 @@
 .example {
   @include container(20px, 20px, 320px);
   padding-top: 27px;
-  padding-bottom: 80px;
   background-color: $grey-special;
 
   @media (min-width: $tablet-width) {
     @include container(0, 0, 768px);
-    background-color: $white;
+    // background-color: $grey-special;
     padding-top: 11px;
-    padding-bottom: 0;
+    position: relative;
+    background-color: transparent;
+
+    &::after {
+      content: "";
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 42.7%;
+      background-color: #f2f2f2;
+      position: absolute;
+    }
   }
+
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -59,7 +71,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 33%;
+    width: 68%;
     padding-top: 70px;
     margin-bottom: 70px;
   }
@@ -101,13 +113,30 @@
   display: none;
 }
 
+.slider.slider--after .example_item--small-cat {
+  display: block;
+}
+
+.slider.slider--after .example__item--fat-cat {
+  display: none;
+}
+
+.slider.slider--before .example_item--fat-cat {
+  display: block;
+}
+
+.slider.slider--before .example_item--small-cat {
+  display: none;
+}
+
 .example__items {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.example__big-cat {
+.example__big-cat,
+.example__little-cat {
   width: 320px;
   height: 240px;
   margin-left: -20px;
@@ -123,8 +152,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 89px;
-    top: -253px;
+    top: -61px;
+    right: 90px;
   }
 }
 
@@ -141,6 +170,10 @@
 
 .example__slider {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-row: 2/3;
@@ -165,11 +198,21 @@
 .example__before {
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     position: relative;
-    background-color: $grey-special;
-    min-height: 462px;
+    min-height: 385px;
   }
 
   @media (min-width: $desktop-width) {
+    background-color: $grey-special;
+  }
+}
+
+.example__after {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
     position: relative;
+    min-height: 385px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-special;
   }
 }
