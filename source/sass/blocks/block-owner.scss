@@ -65,6 +65,7 @@
 }
 
 .block-owner__item {
+  position: relative;
   margin: 0;
 
   @media (min-width: $desktop-width) {
@@ -89,6 +90,16 @@
   text-transform: uppercase;
   padding: 11px 16px 12px;
 
+  &:hover {
+    outline: none;
+    border-color: $light-grey;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: red;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 15px 0 13px 22px;
   }
@@ -96,6 +107,7 @@
 
 .block-owner__text--tel {
   @media (min-width: $tablet-width) {
+    outline: none;
     padding-left: 16px;
   }
 }
@@ -104,5 +116,38 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.block-owner__img {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+
+  &:active {
+    fill: red;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    right: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 21px;
+  }
+}
+
+.block-owner__img--phone {
+  position: absolute;
+  top: 11px;
+  right: 13px;
+
+  @media (min-width: $tablet-width) {
+    top: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
   }
 }

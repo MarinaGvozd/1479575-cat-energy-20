@@ -1,8 +1,7 @@
-.page-footers {
+.page__footer-main {
   @include container(20px, 20px, 320px);
   display: flex;
   flex-direction: column;
-  background-color: $drop-grey;
   padding-top: 39px;
 
   @media (min-width: $tablet-width) {
@@ -15,8 +14,11 @@
 
   @media (min-width: $desktop-width) {
     @include container(110px, 110px, 1440px);
-    background-color: $drop-grey;
   }
+}
+
+.page__footer {
+  background-color: $drop-grey;
 }
 
 .page-footer__logo {
@@ -24,6 +26,14 @@
   max-width: 128px;
   align-self: center;
   padding-bottom: 30px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -38,6 +48,14 @@
   font-size: 16px;
   line-height: 18px;
   color: $grey-dark;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 19px;
@@ -55,4 +73,14 @@
   width: 34px;
   height: 37px;
   fill: #666666;
+
+  &:hover {
+    fill: $green-but;
+    opacity: 0.7;
+  }
+
+  &:focus {
+    fill: $green-but;
+    opacity: 0.5;
+  }
 }

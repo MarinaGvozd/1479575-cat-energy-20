@@ -42,3 +42,19 @@
     max-width: inherit;
   }
 }
+
+.page-header__logo-img {
+  height: 38px;
+  max-width: 190px;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 202px;
+    width: 202px;
+    height: 60px;
+  }
+}

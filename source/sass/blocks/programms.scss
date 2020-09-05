@@ -38,20 +38,35 @@
   }
 }
 
-.programms__thin-cat::after {
+.programms__btn-thin-cat::after,
+.programms__btn-fat-cat::after {
   content: "";
-  margin-left: 11px;
+  margin-left: 17px;
   margin-top: -3px;
   vertical-align: middle;
   width: 25px;
   height: 11px;
   display: inline-block;
-  background: url("../../img/icon-right-arrow-long.svg") no-repeat;
+  background: url("../img/icon-right-arrow-long.svg") no-repeat;
+
 
   @media (min-width: $tablet-width) {
-    margin-left: 22px;
+    margin-left: 27px;
     margin-top: -5px;
   }
+}
+
+.programms__btn-thin-cat:hover::after,
+.programms__btn-fat-cat:hover::after,
+.programms__btn-thin-cat:focus::after,
+.programms__btn-fat-cat:focus::after {
+  content: "";
+  margin-top: -3px;
+  vertical-align: middle;
+  width: 35px;
+  height: 11px;
+  display: inline-block;
+  background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
 }
 
 .programms__fat-cat {
@@ -62,22 +77,6 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0 0 61px 52px;
-  }
-}
-
-.programms__fat-cat::after {
-  content: "";
-  margin-left: 11px;
-  margin-top: -3px;
-  vertical-align: middle;
-  width: 25px;
-  height: 11px;
-  display: inline-block;
-  background: url("../../img/icon-right-arrow-long.svg") no-repeat;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 22px;
-    margin-top: -5px;
   }
 }
 
@@ -140,7 +139,8 @@
   text-transform: uppercase;
   color: $black;
 
-  &:focus {
+  &:focus,
+  &:active {
     opacity: 0.3;
   }
 
