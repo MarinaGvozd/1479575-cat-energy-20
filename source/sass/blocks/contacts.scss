@@ -12,12 +12,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    left: calc(50% - 610px);
     column-gap: 78px;
     min-width: 39.5%;
     padding-left: 75px;
     position: absolute;
     z-index: 2;
-    left: 110px;
     top: 95px;
     background-color: $white;
   }

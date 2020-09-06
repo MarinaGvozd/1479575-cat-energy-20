@@ -45,6 +45,16 @@ const serverLocal = (done) => {
 }
 exports.serverLocal = serverLocal;
 
+// sprites local
+const spriteLocal = () => {
+  return gulp
+    .src("source/img/**/*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"))
+}
+exports.spriteLocal = spriteLocal;
+
 // Watcher
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
@@ -57,7 +67,6 @@ const imagesLocal = () => {
     .src('source/img/*.{png,jpg}')
 		.pipe(webp({ quality: 90 }))
     .pipe(gulp.dest('source/img'))
-    .pipe(sync.stream());
 };
 exports.imagesLocal = imagesLocal;
 
@@ -139,7 +148,7 @@ exports.clean = clean;
 
 // satrt local environment
 exports.default = gulp.series(
-  stylesLocal, imagesLocal, watcher, serverLocal
+  stylesLocal, serverLocal, spriteLocal, watcher
 );
 
 // create build directory with all necessary directories/files
