@@ -1,0 +1,36 @@
+@mixin btn {
+  font-family: $oswald;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  background-color: $green-but;
+  color: $white;
+  cursor: pointer;
+  text-align: center;
+}
+
+// @mixin container (110px, 110px) {
+//   margin: 0 auto;
+//   box-sizing: border-box;
+//   padding-right: $110px;
+//   padding-left: $110px;
+//   min-width: $desktop-width;
+// }
+
+// @mixin container (30px, 30px) {
+//   margin: 0 auto;
+//   box-sizing: border-box;
+//   padding-right: $30px;
+//   padding-left: $30px;
+//   min-width: $tablet-width;
+// }
+
+@mixin container ($padLeft, $padRight, $minWidth) {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-right: $padRight;
+  padding-left: $padLeft;
+  min-width: $minWidth;
+  max-width: 1440px;
+}

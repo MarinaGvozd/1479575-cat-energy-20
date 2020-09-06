@@ -1,0 +1,142 @@
+.promo {
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+    padding-bottom: 23px;
+
+    @include container(20px, 20px, 320px);
+    padding-top: 27px;
+    background: url("../img/index-background-mobile@1x.jpg") 50% 0 no-repeat;
+    background-color: $green-but;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index-background-mobile@2x.jpg");
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    @include container(118px, 30px, 768px);
+    text-align: left;
+    background: $white;
+    padding-top: 60px;
+    min-height: 860px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-right: 100px;
+    padding-left: 190px;
+    min-width: 1440px;
+    position: relative;
+    z-index: 1;
+    padding-top: 110px;
+    min-height: 664px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -113px;
+    right: 0;
+    width: 50%;
+    height: 696px;
+    background-color: $green-but;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 720px auto;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
+}
+
+.promo__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $white;
+  margin: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    max-width: 430px;
+    text-align: left;
+    margin: 0 0 40px 0;
+  }
+}
+
+.promo__description {
+  margin: 0;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $white;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+}
+
+.promo__choose-program {
+  @include btn;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 11px 15px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    font-size: 20px;
+    padding: 18px 27px;
+    margin-left: -7px;
+    position: absolute;
+    z-index: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 26px;
+    margin-left: -0;
+  }
+}
+
+.promo__img {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 341px;
+    left: 30px;
+    width: 709px;
+    height: 609px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    top: 4%;
+    left: 39%;
+  }
+}

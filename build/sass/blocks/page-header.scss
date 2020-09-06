@@ -1,0 +1,60 @@
+.page-header {
+  font-family: $oswald;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    @include container(30px, 30px, 768px);
+    align-items: center;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container(110px, 110px, 1440px);
+    padding-top: 53px;
+  }
+}
+
+.page-header__logo {
+  height: 38px;
+  max-width: 190px;
+  padding: 11px 20px 14px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    height: 100%;
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 60px;
+    max-width: inherit;
+  }
+}
+
+.page-header__logo-img {
+  height: 38px;
+  max-width: 190px;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 202px;
+    width: 202px;
+    height: 60px;
+  }
+}

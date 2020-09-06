@@ -1,0 +1,64 @@
+.case-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
+}
+
+.case-list__item {
+  padding-top: 14px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 45px;
+    margin-bottom: 22px;
+  }
+}
+
+.case-list__value {
+  text-transform: uppercase;
+  margin: 0 0 8px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.case-list__index {
+  background-color: $grey-special;
+  padding: 0 10px;
+  margin: 0 10px -15px;
+  font-family: $arial;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  width: 80px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 13px 9px -15px;
+    width: 140px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 13px 9px -4px;
+    background-color: $drop-grey;
+  }
+}
