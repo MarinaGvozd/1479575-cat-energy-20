@@ -102,5 +102,5 @@ exports.clean = clean;
 
 // create build directory with all necessary directories/files
 exports.build = gulp.series(
-  clean, copy, server, styles, sprite, watcher
+  clean, copy, server, styles, sprite
 );
