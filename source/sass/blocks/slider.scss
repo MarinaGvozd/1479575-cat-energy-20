@@ -44,16 +44,17 @@
   border-radius: 6px;
 
   @media (min-width: $tablet-width) {
-    width: 428px;
+    width: 432px;
     height: 6px;
     background-color: $light-grey;
     border: 0;
     border-radius: 2.5px;
+    margin: 0 20px;
   }
 
 
   @media (min-width: $desktop-width) {
-    width: 473px;
+    width: 432px;
   }
 }
 
@@ -66,6 +67,15 @@
   background-color: $green-but;
   border: 0;
   border-radius: 3px;
+
+  &:hover {
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.19);
+  }
+
+  &:active {
+    border: 1px solid #68b738;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
 
   @media (min-width: $tablet-width) {
     width: 35px;

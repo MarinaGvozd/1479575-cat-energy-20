@@ -1,12 +1,14 @@
 .example {
-  @include container(20px, 20px, 320px);
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+  min-width: 320px;
   padding-top: 27px;
   background-color: $grey-special;
 
   @media (min-width: $tablet-width) {
-    @include container(0, 0, 768px);
-    // background-color: $grey-special;
-    padding-top: 11px;
+    padding: 11px 0 0;
     position: relative;
     background-color: transparent;
 
@@ -172,7 +174,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 10px;
+    padding-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {

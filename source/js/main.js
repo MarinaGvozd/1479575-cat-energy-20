@@ -17,7 +17,6 @@ navToggle.addEventListener('click', function() {
 
 
 buttonBefore.addEventListener("click", function() {
-    console.log('slider', slider);
     slider.classList.contains("slider--after") && (slider.classList.remove("slider--after"),
     slider.classList.add("slider--before"))
 });

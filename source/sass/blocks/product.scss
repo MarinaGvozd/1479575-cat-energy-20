@@ -25,6 +25,7 @@
 }
 
 .product__item--plus {
+  position: relative;
   background-color: $white;
   outline: none;
 
@@ -45,5 +46,28 @@
     height: 1px;
     background: #d9d9d9;
     width: calc(100% + 40px);
+  }
+}
+
+.product__item--plus::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+  background: #ffffff url("../img/icon-plus.svg") no-repeat center;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 53px;
   }
 }
