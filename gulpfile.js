@@ -100,7 +100,6 @@ const images = () => {
     .src('source/img/*.{png,jpg}')
 		.pipe(webp({ quality: 90 }))
     .pipe(gulp.dest('build/img'))
-    .pipe(sync.stream());
 };
 exports.images = images;
 
@@ -146,5 +145,5 @@ exports.default = gulp.series(
 // create build directory with all necessary directories/files
 // start prod environmetn - make a Build
 exports.build = gulp.series(
-  clean, copy, styles, images, sprite
+  clean, copy, styles, sprite
 );
