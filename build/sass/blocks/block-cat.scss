@@ -30,7 +30,7 @@
   }
 
   &:invalid {
-    color: red;
+    border: 2px solid red;
   }
 
   @media (min-width: $tablet-width) {
