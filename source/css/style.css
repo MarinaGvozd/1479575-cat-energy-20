@@ -309,14 +309,14 @@ template {
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/oswaldmedium.woff2") format("woff2"), url("../../fonts/oswaldmedium.woff") format("woff"); }
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff"); }
 
 @font-face {
   font-family: "Oswald";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/oswaldregular.woff2") format("woff2"), url("../../fonts/oswaldregular.woff") format("woff"); }
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff"); }
 
 img {
   max-width: 100%;
@@ -359,8 +359,11 @@ img {
     min-width: 320px;
     max-width: 1440px;
     padding-top: 27px;
-    background-color: #68b73b;
-    background: url("../../img/index-background-mobile@1x.jpg") 50% 0 no-repeat; } }
+    background: url("../img/index-background-mobile@1x.jpg") 50% 0 no-repeat; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+    .promo {
+      background: url("../img/index-background-mobile@2x.jpg") no-repeat top center, linear-gradient(to bottom, #64a83b 0, #64a83b 305px, #ffffff 305px, #ffffff 100%);
+      background-size: 320px 305px, auto; } }
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .promo {
@@ -397,14 +400,14 @@ img {
     width: 50%;
     height: 696px;
     background-color: #68b73b;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 720px auto;
     z-index: -1; } }
   @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
     .promo::before {
-      background-image: url("../../img/index-background-desktop@2x.jpg"); } }
+      background-image: url("../img/index-background-desktop@2x.jpg"); } }
 
 .promo__title {
   font-family: "Oswald", "Arial", sans-serif;
@@ -663,7 +666,7 @@ img {
   width: 25px;
   height: 11px;
   display: inline-block;
-  background: url("../../img/icon-right-arrow-long.svg") no-repeat; }
+  background: url("../img/icon-right-arrow-long.svg") no-repeat; }
   @media (min-width: 768px) {
     .programms__btn-thin-cat::after,
     .programms__btn-fat-cat::after {
@@ -680,7 +683,7 @@ img {
   width: 35px;
   height: 11px;
   display: inline-block;
-  background: url("../../img/icon-right-arrow-verylong.svg") no-repeat; }
+  background: url("../img/icon-right-arrow-verylong.svg") no-repeat; }
 
 @media (min-width: 768px) {
   .programms__fat-cat {
@@ -1036,20 +1039,29 @@ img {
       margin-left: 0; } }
 
 .contacts__map-picture {
-  background: url("../../img/bg-map-mobile@1x.png") 50% 0 no-repeat;
+  background: url("../img/bg-map-mobile@1x.png") 50% 0 no-repeat;
   margin: 0 auto;
   display: block;
   width: 100%;
   height: 362px;
   border: 0; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .contacts__map-picture {
+      background-image: url("../img/bg-map-mobile@2x.jpg"); } }
   @media (min-width: 768px) {
     .contacts__map-picture {
       height: 400px;
-      background: url("../../img/bg-map-tablet@1x.png") 50% 0 no-repeat; } }
+      background: url("../img/bg-map-tablet@1x.png") 50% 0 no-repeat; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+    .contacts__map-picture {
+      background-image: url("../img/bg-map-tablet@2x.jpg"); } }
   @media (min-width: 1440px) {
     .contacts__map-picture {
       position: relative;
-      background: url("../../img/bg-map-desktop@1x.png") 50% 0 no-repeat; } }
+      background: url("../img/bg-map-desktop@1x.png") 50% 0 no-repeat; } }
+  @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
+    .contacts__map-picture {
+      background-image: url("../img/bg-map-desktop@2x.jpg"); } }
 
 @media (min-width: 768px) {
   .contacts__span {
@@ -1228,8 +1240,9 @@ img {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin: 0;
+  margin: 0 -20px;
   padding-bottom: 41px;
+  padding-left: 20px;
   border-bottom: 1px solid rgba(205, 205, 205, 0.5); }
   @media (min-width: 768px) {
     .main-catalog__title {
@@ -1826,11 +1839,14 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("..//../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #68b73b;
   background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .additional__gift {
+      background-image: url("../img/gift-photo-mobile@2x.jpg"); } }
   @media (min-width: 768px) {
     .additional__gift {
       justify-content: space-between;
@@ -1839,6 +1855,9 @@ img {
       padding: 65px 90px;
       background-image: url("../img/gift-photo-tablet@1x.jpg");
       margin-top: 69px; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+    .additional__gift {
+      background-image: url("../img/gift-photo-tablet@2x.jpg"); } }
   @media (min-width: 1440px) {
     .additional__gift {
       background-image: url("../img/gift-photo-desktop@1x.jpg");
@@ -1846,6 +1865,9 @@ img {
       margin-top: 0;
       padding: 69px 42px 42px;
       align-self: flex-end; } }
+  @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
+    .additional__gift {
+      background-image: url("../img/gift-photo-desktop@2x.jpg"); } }
 
 .additional__gift-description {
   font-family: "Arial", sans-serif;
@@ -2093,6 +2115,9 @@ img {
       margin: 1px 0 17px 0; } }
 
 .block-cat__text {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   flex-grow: 1;
   padding: 11px 0 11px 14px;
   margin-left: 14px; }
@@ -2100,6 +2125,8 @@ img {
     border-color: #cdcdcd; }
   .block-cat__text:focus {
     border-color: red; }
+  .block-cat__text:invalid {
+    border: 2px solid red; }
   @media (min-width: 768px) {
     .block-cat__text {
       padding: 14px 0 14px 14px;
@@ -2258,7 +2285,10 @@ img {
 
 .block-owner__text {
   text-transform: uppercase;
-  padding: 11px 16px 12px; }
+  padding: 11px 44px 11px 12px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
   .block-owner__text:hover {
     outline: none;
     border-color: #cdcdcd; }
@@ -2267,7 +2297,10 @@ img {
     border-color: red; }
   @media (min-width: 768px) {
     .block-owner__text {
-      padding: 15px 0 13px 22px; } }
+      padding: 15px 50px 13px 22px; } }
+
+.block-cat__text--error:invalid {
+  border: 2px solid red; }
 
 @media (min-width: 768px) {
   .block-owner__text--tel {
@@ -2296,7 +2329,8 @@ img {
 .block-owner__img--phone {
   position: absolute;
   top: 11px;
-  right: 13px; }
+  right: 13px;
+  fill: #000000; }
   @media (min-width: 768px) {
     .block-owner__img--phone {
       top: 17px; } }

@@ -11,6 +11,58 @@ const webp = require('gulp-webp');
 const del = require('del');
 const csso = require('gulp-csso');
 
+// Local section
+// ------------------------------------------------------
+// Styles Local
+const stylesLocal = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(csso())
+    .pipe(rename("styles.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
+    .pipe(sync.stream());
+}
+exports.stylesLocal = stylesLocal
+
+
+// Server Local
+const serverLocal = (done) => {
+  sync.init({
+    server: {
+      baseDir: 'source'
+    },
+    cors: true,
+    notify: false,
+    ui: false,
+  });
+  done();
+}
+exports.serverLocal = serverLocal;
+
+// Watcher
+const watcher = () => {
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/*.html").on("change", sync.reload);
+}
+
+// Images Local
+const imagesLocal = () => {
+  gulp
+    .src('source/img/*.{png,jpg}')
+		.pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest('source/img'))
+    .pipe(sync.stream());
+};
+exports.imagesLocal = imagesLocal;
+
+// Production section - make a Build
+// ------------------------------------------------------------------------
 // Styles
 const styles = () => {
   return gulp.src("build/sass/style.scss")
@@ -26,11 +78,9 @@ const styles = () => {
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
-
 exports.styles = styles;
 
 // Server
-
 const server = (done) => {
   sync.init({
     server: {
@@ -42,14 +92,7 @@ const server = (done) => {
   });
   done();
 }
-
 exports.server = server;
-
-// Watcher
-const watcher = () => {
-  gulp.watch("build/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("build/*.html").on("change", sync.reload);
-}
 
 // Images
 const images = () => {
@@ -61,12 +104,7 @@ const images = () => {
 };
 exports.images = images;
 
-exports.default = gulp.series(
-  styles, server, images, watcher
-);
-
 // sprites
-
 const sprite = () => {
   return gulp
     .src("source/img/**/*.svg")
@@ -93,14 +131,20 @@ const copy = () => {
 }
 exports.copy = copy;
 
-
 // clean build directory
 const clean = () => {
   return del("build")
 }
 exports.clean = clean;
 
+
+// satrt local environment
+exports.default = gulp.series(
+  stylesLocal, imagesLocal, watcher, serverLocal
+);
+
 // create build directory with all necessary directories/files
+// start prod environmetn - make a Build
 exports.build = gulp.series(
-  clean, copy, server, styles, sprite
+  clean, copy, styles, sprite, server
 );
