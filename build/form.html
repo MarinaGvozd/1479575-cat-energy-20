@@ -17,7 +17,7 @@
         <img src="./img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="38">
       </picture>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -46,13 +46,13 @@
           <p class="block-cat__item">
             <label class="block-cat__label">
               Имя:*
-              <input class="block-cat__text" type="text" name="cat-name" placeholder="БАРСИК">
+              <input class="block-cat__text block-cat__text--error" type="text" name="cat-name" placeholder="БАРСИК">
             </label>
           </p>
           <p class="block-cat__item">
             <label class="block-cat__label">
               Вес (кг):*
-              <input class="block-cat__text" type="text" name="cat-weight" placeholder="7">
+              <input class="block-cat__text block-cat__text--error" type="text" name="cat-weight" placeholder="7">
             </label>
           </p>
           <p class="block-cat__item">

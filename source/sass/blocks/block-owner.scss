@@ -88,7 +88,8 @@
 
 .block-owner__text {
   text-transform: uppercase;
-  padding: 11px 16px 12px;
+  padding: 11px 44px 11px 12px;
+  appearance: none;
 
   &:hover {
     outline: none;
@@ -101,8 +102,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 15px 0 13px 22px;
+    padding: 15px 50px 13px 22px;
   }
+}
+
+.block-cat__text--error:invalid {
+  color: red;
 }
 
 .block-owner__text--tel {
@@ -142,6 +147,7 @@
   position: absolute;
   top: 11px;
   right: 13px;
+  fill: $black;
 
   @media (min-width: $tablet-width) {
     top: 17px;

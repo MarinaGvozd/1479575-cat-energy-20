@@ -6,10 +6,12 @@
     @include container(20px, 20px, 320px);
     padding-top: 27px;
     background: url("../img/index-background-mobile@1x.jpg") 50% 0 no-repeat;
-    background-color: $green-but;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/index-background-mobile@2x.jpg");
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: 320px 305px, auto;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
     }
   }
 
