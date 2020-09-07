@@ -1,5 +1,13 @@
 .forms {
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 76px;
+  }
 }
 
 .forms__title {
@@ -8,9 +16,16 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0 0 37px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 53px 0;
+  }
 }
 
 .forms__text {
+  width: 85%;
   font-family: $oswald;
   font-weight: 400;
   font-size: 14px;
@@ -23,9 +38,26 @@
     line-height: 30px;
     margin-bottom: 65px;
     max-width: 330px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-bottom: 66px;
   }
 }
 
 .forms__wpapper-mobile {
   @include container(20px, 20px, 320px);
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    @include container(30px, 30px, 768px);
+    padding-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container(110px, 110px, 1440px);
+    padding-bottom: 85px;
+  }
 }

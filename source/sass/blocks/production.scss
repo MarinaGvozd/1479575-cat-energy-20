@@ -1,8 +1,7 @@
 .production {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 22px;
-  border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -35,6 +34,18 @@
     max-width: 130px;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+    margin-left: 21px;
+    text-align: center;
+    margin-bottom: 22px;
+  }
+}
+
+.production__link {
+  color: $black;
+  text-decoration: none;
 }
 
 .production__line {
@@ -105,6 +116,10 @@
     font-size: 16px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 87px 0;
+  }
 }
 
 .production__all-products {
@@ -128,10 +143,14 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 300px;
+    bottom: 305px;
     left: 0;
     width: 324px;
     height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 310px;
   }
 }
 

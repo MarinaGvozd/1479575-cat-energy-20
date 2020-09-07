@@ -1,12 +1,19 @@
 .promo {
-  text-align: center;
-  padding-bottom: 23px;
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+    padding-bottom: 23px;
 
-  @include container(20px, 20px, 320px);
-  padding-top: 27px;
-  background: url("../../img/index-background-mobile@1x.jpg") 50% 0 no-repeat;
+    @include container(20px, 20px, 320px);
+    padding-top: 27px;
+    background: url("../img/index-background-mobile@1x.jpg") 50% 0 no-repeat;
 
-  @media (min-width: $tablet-width) {
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index-background-mobile@2x.jpg") no-repeat top center, linear-gradient(to bottom, #64a83b 0, #64a83b 305px, #ffffff 305px, #ffffff 100%);
+      background-size: 320px 305px, auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
     @include container(118px, 30px, 768px);
     text-align: left;
     background: $white;
@@ -15,7 +22,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include container(190px, 100px, 1440px);
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-right: 100px;
+    padding-left: 190px;
+    min-width: 1440px;
     position: relative;
     z-index: 1;
     padding-top: 110px;
@@ -33,14 +44,14 @@
     width: 50%;
     height: 696px;
     background-color: $green-but;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+    background-position: top left;
+    background-size: 720px auto;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }
 }
@@ -88,6 +99,14 @@
   font-size: 14px;
   line-height: 18px;
   padding: 11px 15px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
 
   @media (min-width: $tablet-width) {
     display: inline-block;

@@ -1,14 +1,29 @@
 .example {
-  @include container(20px, 20px, 320px);
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+  min-width: 320px;
   padding-top: 27px;
-  padding-bottom: 80px;
   background-color: $grey-special;
 
   @media (min-width: $tablet-width) {
-    @include container(30px, 30px, 768px);
-    background-color: $white;
-    padding-top: 11px;
+    padding: 11px 0 0;
+    position: relative;
+    background-color: transparent;
+
+    &::after {
+      content: "";
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 42.7%;
+      background-color: #f2f2f2;
+      position: absolute;
+    }
   }
+
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -27,7 +42,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 63px 0;
+    margin: 35px 0 63px 30px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -58,7 +73,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 33%;
+    width: 68%;
     padding-top: 70px;
     margin-bottom: 70px;
   }
@@ -100,28 +115,47 @@
   display: none;
 }
 
+.slider.slider--after .example_item--small-cat {
+  display: block;
+}
+
+.slider.slider--after .example__item--fat-cat {
+  display: none;
+}
+
+.slider.slider--before .example_item--fat-cat {
+  display: block;
+}
+
+.slider.slider--before .example_item--small-cat {
+  display: none;
+}
+
 .example__items {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.example__big-cat {
+.example__big-cat,
+.example__little-cat {
   width: 320px;
   height: 240px;
   margin-left: -20px;
   max-width: inherit;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     width: 665px;
     height: 520px;
     margin-left: 0;
+    top: -170px;
+    right: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    right: 89px;
-    position: absolute;
-    top: -253px;
+    top: -61px;
+    right: 90px;
   }
 }
 
@@ -140,26 +174,47 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 56px;
-    padding-bottom: 30px;
+    padding-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 2/3;
     grid-column: 2/3;
+    padding-top: 56px;
+    padding-bottom: 30px;
   }
 }
 
 .example__wrapper {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    padding: 0 30px 228px 30px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
+    padding: 0 0 0 110px;
     grid-row: 2/3;
     grid-column: 1/2;
   }
 }
 
 .example__before {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
     position: relative;
+    min-height: 385px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-special;
+  }
+}
+
+.example__after {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    position: relative;
+    min-height: 385px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-special;
   }
 }

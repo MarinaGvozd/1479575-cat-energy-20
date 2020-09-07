@@ -12,7 +12,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    left: calc(50% - 610px);
+    column-gap: 78px;
+    min-width: 39.5%;
+    padding-left: 75px;
     position: absolute;
+    z-index: 2;
+    top: 95px;
+    background-color: $white;
   }
 }
 
@@ -25,9 +32,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-top: 5px;
     font-size: 20px;
     line-height: 24px;
     width: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -45,25 +57,44 @@
     text-align: right;
     margin-left: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: left;
+    margin-left: 0;
+  }
 }
 
 .contacts__map-picture {
-  background: url("../../img/bg-map-mobile@1x.png") 50% 0 no-repeat;
+  background: url("../img/bg-map-mobile@1x.png") 50% 0 no-repeat;
   margin: 0 auto;
   display: block;
-  width: 320px;
+  width: 100%;
   height: 362px;
   border: 0;
-  max-width: 1440px;
 
-  @media (min-width: $tablet-width) {
-    height: 400px;
-    width: 100%;
-    background: url("../../img/bg-map-tablet@1x.png") 50% 0 no-repeat;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    background: url("../../img/bg-map-desktop@1x.png") 50% 0 no-repeat;
+    height: 400px;
+    background: url("../img/bg-map-tablet@1x.png") 50% 0 no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    background: url("../img/bg-map-desktop@1x.png") 50% 0 no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
   }
 }
 
@@ -76,4 +107,14 @@
 
 .contacts__wrapper--bg {
   background-color: $drop-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
+
+.contacts {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }

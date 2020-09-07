@@ -7,8 +7,10 @@
 }
 
 .product__item {
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    margin-top: 139px;
+    margin-top: 140px;
     width: 35%;
     background-color: $drop-grey;
     height: 430px;
@@ -16,11 +18,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 18%;
+    width: 14%;
+    height: 432px;
+    margin-top: 139px;
   }
 }
 
 .product__item--plus {
+  position: relative;
   background-color: $white;
   outline: none;
 
@@ -28,5 +33,41 @@
     background-color: $white;
     padding: 0 38px;
     outline: 1px solid rgba(205, 205, 205, 0.5);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .product__item::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: #d9d9d9;
+    width: calc(100% + 40px);
+  }
+}
+
+.product__item--plus::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+  background: #ffffff url("../img/icon-plus.svg") no-repeat center;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 53px;
   }
 }
