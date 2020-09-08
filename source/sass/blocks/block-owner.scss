@@ -1,38 +1,48 @@
 .block-owner {
   position: relative;
   border: none;
-  padding-bottom: 2px;
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 41px;
-    width: 106%;
-    height: 3px;
-    background-color: #68b738;
-    z-index: -1;
-  }
+  padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 38px;
 
     &::after {
       content: "";
-      width: 123%;
-      right: -71px;
+      display: block;
+      position: absolute;
       top: 48px;
+      width: 123%;
+      height: 3px;
+      right: -71px;
+      background-color: #68b738;
+      z-index: -1;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 38px;
 
     &::after {
       content: "";
-      width: 118%;
-      right: -109px;
-      top: 21px;
+      position: absolute;
+      top: 9%;
+      width: 100vw;
+      height: 3px;
+      margin-top: 2px;
+      background: #68b738;
+      z-index: -1;
+      right: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 9%;
+      width: 100vw;
+      height: 3px;
+      margin-top: 2px;
+      background: #68b738;
+      z-index: -1;
+      left: -110px;
     }
   }
 }
@@ -40,7 +50,7 @@
 .block-owner__subtitle {
   display: inline-block;
   width: 72%;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   padding: 26px 5px 0 0;
   font-weight: 400;
   font-size: 24px;
@@ -78,7 +88,7 @@
   grid-template-columns: auto 1fr;
   align-items: center;
   column-gap: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 17px;
@@ -88,8 +98,9 @@
 
 .block-owner__text {
   text-transform: uppercase;
-  padding: 11px 44px 11px 12px;
+  padding: 11px 44px 14px 12px;
   appearance: none;
+  border: 1px solid rgba(205, 205, 205, 0.5);
 
   &:hover {
     outline: none;
@@ -98,11 +109,11 @@
 
   &:focus {
     outline: none;
-    border-color: red;
+    border-color: $black;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 15px 50px 13px 22px;
+    padding: 15px 50px 15px 22px;
   }
 }
 
@@ -130,7 +141,7 @@
   right: 16px;
 
   &:active {
-    fill: red;
+    fill: $green-but;
   }
 
   @media (min-width: $tablet-width) {

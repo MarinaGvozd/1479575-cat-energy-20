@@ -22,10 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
     box-sizing: border-box;
-    padding-right: 100px;
-    padding-left: 190px;
     min-width: 1440px;
     position: relative;
     z-index: 1;
@@ -47,12 +44,21 @@
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top left;
-    background-size: 720px auto;
+    background-size: cover;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
     }
+  }
+}
+
+.promo__centre {
+  @media (min-width: $desktop-width) {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin: 0 auto;
+  padding-left: 190px;
   }
 }
 

@@ -136,6 +136,14 @@
   font-size: 16px;
   line-height: 24px;
   padding: 9px 0;
+
+  &:hover {
+    background-color: $grey-special;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .production__picture {
@@ -156,13 +164,11 @@
 
 .production__img {
   display: block;
-  width: 140px;
   height: 144px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
-    width: 324px;
     height: 140px;
   }
 }

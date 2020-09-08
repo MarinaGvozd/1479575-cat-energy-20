@@ -2070,6 +2070,7 @@ img {
     border: none; } }
 
 @media (min-width: 1440px) {
+
   .information__cat {
     grid-column: 1 / 2;
     grid-row: 1 / 2; } }

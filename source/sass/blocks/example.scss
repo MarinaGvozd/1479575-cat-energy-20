@@ -1,4 +1,4 @@
-.example {
+.example__case {
   margin: 0 auto;
   box-sizing: border-box;
   padding-right: 20px;
@@ -26,11 +26,17 @@
 
 
   @media (min-width: $desktop-width) {
+    max-width: 1440px;
     display: grid;
     grid-template-rows: min-content 1fr;
     background-color: $drop-grey;
     padding: 0 0 38px 0;
   }
+}
+
+.example__centre {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .example__title {
@@ -217,4 +223,23 @@
   @media (min-width: $desktop-width) {
     background-color: $grey-special;
   }
+}
+
+.example {
+  @media (min-width: $desktop-width) {
+  position: relative;
+
+
+  &::before {
+    content: "";
+    height: 70%;
+    bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 79%;
+  background-color: #f2f2f2;
+  position: absolute;
+  }
+}
 }
