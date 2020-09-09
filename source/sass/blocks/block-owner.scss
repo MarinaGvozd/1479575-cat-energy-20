@@ -20,28 +20,28 @@
   }
 
   @media (min-width: $desktop-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 9%;
-      width: 100vw;
-      height: 3px;
-      margin-top: 2px;
-      background: #68b738;
-      z-index: -1;
-      right: 0;
-    }
-
     &::before {
       content: "";
+      display: block;
       position: absolute;
-      top: 9%;
       width: 100vw;
       height: 3px;
-      margin-top: 2px;
-      background: #68b738;
+      right: 100%;
+      background-color: #68b738;
       z-index: -1;
-      left: -110px;
+      top: 21px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100vw;
+      height: 3px;
+      left: 45%;
+      background-color: #68b738;
+      z-index: -1;
+      top: 21px;
     }
   }
 }
@@ -58,6 +58,7 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
+    padding: 26px 43px 0 0;
     width: auto;
     font-size: 36px;
     line-height: 36px;
@@ -96,6 +97,8 @@
 }
 
 .block-owner__text {
+  cursor: pointer;
+  outline: none;
   text-transform: uppercase;
   padding: 11px 44px 14px 12px;
   appearance: none;
@@ -106,9 +109,11 @@
     border-color: $light-grey;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     outline: none;
     border-color: $black;
+    box-shadow: inset 0 0 0 1px $black;
   }
 
   @media (min-width: $tablet-width) {

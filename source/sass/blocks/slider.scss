@@ -18,6 +18,7 @@
 }
 
 .slider__toggle {
+  cursor: pointer;
   padding: 5px 0;
   line-height: 20px;
   text-transform: uppercase;
@@ -27,6 +28,16 @@
   font-size: 16px;
   font-weight: 400;
   color: $black;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  &:active {
+    border-bottom: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -59,6 +70,7 @@
 }
 
 .slider__control-handle {
+  cursor: pointer;
   position: relative;
   display: block;
   width: 35px;

@@ -76,7 +76,7 @@
   border: 0;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-image: url("../img/bg-map-mobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
@@ -84,7 +84,7 @@
     background: url("../img/bg-map-tablet@1x.png") 50% 0 no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-image: url("../img/bg-map-tablet@2x.png");
     }
   }
 
@@ -93,7 +93,7 @@
     background: url("../img/bg-map-desktop@1x.png") 50% 0 no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-image: url("../img/bg-map-desktop@2x.png");
     }
   }
 }

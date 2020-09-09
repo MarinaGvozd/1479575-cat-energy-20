@@ -20,6 +20,7 @@
 
 .block-programm__radio + .block-programm__label::after {
   content: "";
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
@@ -32,6 +33,10 @@
     width: 37px;
     height: 37px;
   }
+}
+
+.block-programm__radio + .block-programm__label:hover::after {
+  border-color: #bababa;
 }
 
 .block-programm__radio:checked ~ .block-programm__label--radio::before {
@@ -50,6 +55,10 @@
     width: 15px;
     height: 15px;
   }
+}
+
+.block-programm__radio:checked ~ .block-programm__label--radio:active::before {
+  opacity: 0.5;
 }
 
 .block-programm {

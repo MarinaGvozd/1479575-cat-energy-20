@@ -50,11 +50,11 @@
   color: $grey-dark;
 
   &:hover {
-    opacity: 0.7;
+    opacity: 1;
   }
 
   &:focus {
-    opacity: 0.5;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
@@ -76,11 +76,10 @@
 
   &:hover {
     fill: $green-but;
-    opacity: 0.7;
   }
 
   &:focus {
     fill: $green-but;
-    opacity: 0.5;
+    opacity: 0.3;
   }
 }

@@ -19,6 +19,8 @@
 }
 
 .block-cat__text {
+  cursor: pointer;
+  outline: none;
   appearance: none;
   flex-grow: 1;
   padding: 11px 0 13px 14px;
@@ -29,8 +31,10 @@
     border-color: $light-grey;
   }
 
-  &:focus {
-    border-color: red;
+  &:focus,
+  &:active {
+    border-color: $black;
+    box-shadow: inset 0 0 0 1px $black;
   }
 
   &:invalid {
