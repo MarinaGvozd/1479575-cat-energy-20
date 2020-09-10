@@ -173,7 +173,6 @@
 }
 
 .production__picture--s {
-
   @media (max-width: 767px) {
     width: 127px;
     height: 133px;
@@ -182,11 +181,11 @@
 }
 
 .production__picture--b {
-
   @media (max-width: 767px) {
     padding-top: 5px;
   }
 }
+
 .production__img {
   display: block;
   height: 144px;
