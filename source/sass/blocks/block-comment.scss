@@ -18,7 +18,7 @@
     line-height: 36px;
     margin-bottom: 66px;
     margin-left: -40px;
-    padding: 10px 39px 10px 0;
+    padding: 10px 39px 10px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,6 +28,7 @@
 
 .block-comment__text-area {
   cursor: pointer;
+  outline: none;
   border: 1px solid rgba(205, 205, 205, 0.5);
   height: 150px;
   width: 100%;

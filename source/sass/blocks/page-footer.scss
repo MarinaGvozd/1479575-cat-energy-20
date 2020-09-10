@@ -9,7 +9,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 32px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,7 +26,7 @@
   height: 24px;
   max-width: 128px;
   align-self: center;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 
   &:hover {
     opacity: 0.7;
@@ -66,11 +67,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 21px 0;
+  padding: 18px 0 17px 0;
 }
 
 .page-footer__company-icon {
-  width: 34px;
   height: 37px;
   fill: #666666;
 
@@ -82,4 +82,8 @@
     fill: $green-but;
     opacity: 0.3;
   }
+}
+
+.page-footer__html {
+  width: 33px;
 }

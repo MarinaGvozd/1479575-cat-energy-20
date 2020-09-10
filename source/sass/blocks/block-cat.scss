@@ -19,11 +19,10 @@
 }
 
 .block-cat__text {
-  cursor: pointer;
   outline: none;
   appearance: none;
   flex-grow: 1;
-  padding: 11px 0 13px 14px;
+  padding: 11px 0 13px 15px;
   margin-left: 14px;
   border: 1px solid rgba(205, 205, 205, 0.5);
 
@@ -42,7 +41,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 14px 0 16px 14px;
+    padding: 14px 0 16px 17px;
     margin-left: 20px;
   }
 

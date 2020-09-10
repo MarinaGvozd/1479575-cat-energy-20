@@ -15,6 +15,16 @@
   font-size: 16px;
   line-height: 22px;
   padding: 10px 0;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .production__caption {
@@ -162,6 +172,21 @@
   }
 }
 
+.production__picture--s {
+
+  @media (max-width: 767px) {
+    width: 127px;
+    height: 133px;
+    padding-top: 17px;
+  }
+}
+
+.production__picture--b {
+
+  @media (max-width: 767px) {
+    padding-top: 5px;
+  }
+}
 .production__img {
   display: block;
   height: 144px;

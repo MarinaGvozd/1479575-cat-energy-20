@@ -5,14 +5,14 @@
   line-height: 26px;
   padding-top: 16px;
   text-transform: none;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
   background-color: $white;
   padding-right: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 37px;
     line-height: 37px;
-    margin-bottom: 63px;
+    margin-bottom: 61px;
     padding-right: 36px;
     margin-left: -40px;
     padding-left: 39px;
@@ -24,6 +24,7 @@
 }
 
 .block-add__label {
+  cursor: pointer;
   position: relative;
   font-family: $oswald;
   font-weight: 400;
@@ -50,10 +51,11 @@
   width: 28px;
   height: 28px;
   border: 1px solid $light-grey;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     top: -4px;
   }
 
@@ -67,9 +69,9 @@
 .block-add__checkbox:checked + .block-add__label::after {
   content: "";
   position: absolute;
-  left: 9px;
+  left: 6px;
   top: 50%;
-  margin-top: -3px;
+  margin-top: -5px;
   fill: $green-but;
   width: 18px;
   height: 14px;
@@ -101,7 +103,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 40px 0;
+    margin: 1px 0 40px;
   }
 
   @media (min-width: $desktop-width) {

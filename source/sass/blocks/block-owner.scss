@@ -1,7 +1,7 @@
 .block-owner {
   position: relative;
   border: none;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 38px;
@@ -70,7 +70,7 @@
 
   @media (min-width: $desktop-width) {
     width: 46%;
-    padding-top: 0;
+    padding: 0 9px 0px 39px;
   }
 }
 

@@ -22,12 +22,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    box-sizing: border-box;
-    min-width: 1440px;
     position: relative;
     z-index: 1;
     padding-top: 110px;
-    min-height: 664px;
+    min-height: 555px;
   }
 }
 
@@ -58,6 +56,8 @@
     max-width: 1440px;
     margin: 0 auto;
     padding-left: 190px;
+    box-sizing: border-box;
+    position: relative;
   }
 }
 
@@ -141,7 +141,7 @@
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    top: 4%;
+    top: -45%;
     left: 39%;
   }
 }
