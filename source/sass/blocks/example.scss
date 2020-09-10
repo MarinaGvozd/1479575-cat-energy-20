@@ -117,11 +117,11 @@
   }
 }
 
-.example_item--small-cat {
+.example__item--small-cat {
   display: none;
 }
 
-.slider.slider--after .example_item--small-cat {
+.slider.slider--after .example__item--small-cat {
   display: block;
 }
 
@@ -133,7 +133,7 @@
   display: block;
 }
 
-.slider.slider--before .example_item--small-cat {
+.slider.slider--before .example__item--small-cat {
   display: none;
 }
 

@@ -1,4 +1,4 @@
-.page__footer-main {
+.page-footer__main {
   @include container(20px, 20px, 320px);
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
   }
 }
 
-.page__footer {
+.page-footer {
   background-color: $drop-grey;
 }
 

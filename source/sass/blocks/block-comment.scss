@@ -41,6 +41,18 @@
   box-sizing: border-box;
   resize: none;
 
+  &:hover {
+    outline: none;
+    border-color: #cdcdcd;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    border-color: #000000;
+    box-shadow: inset 0 0 0 1px #000000;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
