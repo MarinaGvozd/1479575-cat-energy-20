@@ -1,7 +1,18 @@
 .block-owner {
   position: relative;
   border: none;
-  padding-bottom: 4px;
+  padding-bottom: 0;
+
+  &::before {
+    content: "";
+    top: 40px;
+    display: block;
+    position: relative;
+    width: 107%;
+    height: 3px;
+    background-color: #68b738;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 38px;
@@ -17,9 +28,23 @@
       background-color: #68b738;
       z-index: -1;
     }
+
+    &::before {
+      content: "";
+      top: 48px;
+      display: block;
+      position: relative;
+      width: 107%;
+      height: 3px;
+      background-color: #68b738;
+      z-index: -1;
+    }
   }
 
   @media (min-width: $desktop-width) {
+
+    padding-bottom: 38px;
+
     &::before {
       content: "";
       display: block;
@@ -48,17 +73,18 @@
 
 .block-owner__subtitle {
   display: inline-block;
-  width: 72%;
-  margin-bottom: 33px;
-  padding: 26px 5px 0 0;
+  width: 200px;
+  margin-bottom: 27px;
+  padding: 22px 5px 0 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
   background-color: $white;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 43px 0 0;
+    padding: 21px 43px 0 0;
     width: auto;
     font-size: 36px;
     line-height: 36px;
@@ -89,9 +115,10 @@
   align-items: center;
   column-gap: 10px;
   margin-bottom: 14px;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 17px;
+    margin-bottom: 19px;
     column-gap: 17px;
   }
 }
@@ -99,9 +126,10 @@
 .block-owner__text {
   outline: none;
   text-transform: uppercase;
-  padding: 11px 44px 14px 12px;
+  padding: 0 28px 0 12px;
   appearance: none;
   border: 1px solid rgba(205, 205, 205, 0.5);
+  height: 45px;
 
   &:hover {
     outline: none;
@@ -115,13 +143,23 @@
     box-shadow: inset 0 0 0 1px $black;
   }
 
+  &::placeholder {
+    color: #444444;
+    opacity: 1;
+  }
+
+  &:invalid {
+    border-color: red;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 15px 50px 15px 22px;
+    height: 47px;
+    padding-left: 24px;
   }
 }
 
 .block-cat__text--error:invalid {
-  border: 2px solid red;
+  border-color: red;
 }
 
 .block-owner__text--tel {

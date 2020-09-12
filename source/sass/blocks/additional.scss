@@ -55,7 +55,7 @@
   line-height: 24px;
   color: $black;
   border-bottom: 1px solid $light-grey;
-  padding-bottom: 33px;
+  padding-bottom: 31px; //33px//
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -265,7 +265,7 @@
   }
 }
 
-.additional-_icon {
+.additional__icon {
   fill: $white;
   margin-bottom: 64px;
 

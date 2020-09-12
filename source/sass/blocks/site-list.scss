@@ -1,3 +1,29 @@
+.site-list {
+  &__item--active {
+    @media (min-width: $tablet-width) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        top: 31px;
+        background: $green-but;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        background: $white;
+        top: 36px;
+      }
+    }
+  }
+}
+
 .site-list__link {
   display: block;
   text-align: center;
@@ -49,32 +75,6 @@
     &:focus,
     &:active {
       opacity: 0.3;
-    }
-  }
-}
-
-.site-list {
-  &__item--active {
-    @media (min-width: $tablet-width) {
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 3px;
-        top: 31px;
-        background: $green-but;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      &::after {
-        background: $white;
-        top: 36px;
-      }
     }
   }
 }

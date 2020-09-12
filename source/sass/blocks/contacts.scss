@@ -1,3 +1,9 @@
+.contacts {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .contacts__wrapper {
   @include container(20px, 20px, 320px);
   display: grid;
@@ -110,11 +116,5 @@
 
   @media (min-width: $desktop-width) {
     background-color: $white;
-  }
-}
-
-.contacts {
-  @media (min-width: $desktop-width) {
-    position: relative;
   }
 }

@@ -2,11 +2,11 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 55px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 53px;
+    padding-bottom: 49px;
   }
 }
 
@@ -14,7 +14,7 @@
   margin: 0 0 14px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 1px 0 17px 0;
+    margin: 0 0 21px 0;
   }
 }
 
@@ -23,7 +23,6 @@
   appearance: none;
   flex-grow: 1;
   padding: 11px 0 13px 15px;
-  margin-left: 14px;
   border: 1px solid rgba(205, 205, 205, 0.5);
 
   &:hover {
@@ -40,13 +39,17 @@
     border-color: red;
   }
 
+  &::placeholder {
+    color: #444444;
+    opacity: 1;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 14px 0 16px 17px;
-    margin-left: 20px;
+    padding: 10px 0 12px 19px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 14px 0 16px 14px;
+    padding: 10px 0 10px 20px;
   }
 }
 
@@ -54,4 +57,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 45px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+}
+
+.block-cat__desc {
+  margin-right: 14px;
+  white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 17px;
+  }
 }

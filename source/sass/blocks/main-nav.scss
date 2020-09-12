@@ -24,12 +24,12 @@
 }
 
 .main-nav__toggle {
+  display: none;
   outline: none;
   position: absolute;
   top: 23px;
   right: 23px;
   z-index: 2;
-  display: block;
   cursor: pointer;
   border: none;
   width: 18px;
@@ -42,6 +42,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
+  display: none;
   background: url("../img/icon-close.svg") no-repeat 0 0;
 }
 

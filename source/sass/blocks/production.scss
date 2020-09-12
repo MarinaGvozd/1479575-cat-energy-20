@@ -40,7 +40,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    margin-left: 62px;
+    margin-left: calc(50% - 62px);
     max-width: 130px;
     text-align: center;
   }
@@ -162,12 +162,14 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 305px;
-    left: 0;
+    left: calc(50% - 162px);
+    right: 0;
     width: 324px;
     height: auto;
   }
 
   @media (min-width: $desktop-width) {
+    left: 0;
     bottom: 310px;
   }
 }

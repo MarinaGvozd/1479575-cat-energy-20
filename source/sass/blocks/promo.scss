@@ -5,7 +5,8 @@
 
     @include container(20px, 20px, 320px);
     padding-top: 27px;
-    background: url("../img/index-background-mobile@1x.jpg") 50% 0 no-repeat;
+    background: url("../img/index-background-mobile@2x.jpg") no-repeat top center, linear-gradient(to bottom, #64a83b 0, #64a83b 305px, #ffffff 305px, #ffffff 100%);
+    background-size: 320px 305px, auto;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/index-background-mobile@2x.jpg") no-repeat top center, linear-gradient(to bottom, #64a83b 0, #64a83b 305px, #ffffff 305px, #ffffff 100%);

@@ -7,9 +7,9 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
-const webp = require('gulp-webp');
-const del = require('del');
-const csso = require('gulp-csso');
+const webp = require("gulp-webp");
+const del = require("del");
+const csso = require("gulp-csso");
 
 // Local section
 // ------------------------------------------------------
@@ -35,7 +35,7 @@ exports.stylesLocal = stylesLocal
 const serverLocal = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: "source"
     },
     cors: true,
     notify: false,
@@ -48,7 +48,7 @@ exports.serverLocal = serverLocal;
 // sprites local
 const spriteLocal = () => {
   return gulp
-    .src("source/img/**/*.svg")
+    .src(["source/img/*.svg", "!source/img/sprite.svg"])
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("source/img"))
@@ -57,30 +57,36 @@ exports.spriteLocal = spriteLocal;
 
 // Watcher
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("stylesLocal"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
 // Images Local
 const imagesLocal = () => {
   gulp
-    .src('source/img/*.{png,jpg}')
+    .src("source/img/*.{png,jpg}")
 		.pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest('source/img'))
+    .pipe(gulp.dest("source/img"))
 };
 exports.imagesLocal = imagesLocal;
 
+
+
+// ------------------------------------------------------------------------
 // Production section - make a Build
 // ------------------------------------------------------------------------
 // Styles
 const styles = () => {
-  return gulp.src("build/sass/style.scss")
+  return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(rename("styles.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
@@ -93,7 +99,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -106,16 +112,16 @@ exports.server = server;
 // Images
 const images = () => {
   gulp
-    .src('source/img/*.{png,jpg}')
+    .src("source/img/*.{png,jpg}")
 		.pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest("build/img"))
 };
 exports.images = images;
 
 // sprites
 const sprite = () => {
   return gulp
-    .src("source/img/**/*.svg")
+    .src(["source/img/*.svg", "!source/img/sprite.svg"])
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
@@ -140,19 +146,18 @@ const copy = () => {
 exports.copy = copy;
 
 // clean build directory
-const clean = () => {
+const cleanBuild = () => {
   return del("build")
 }
-exports.clean = clean;
-
+exports.cleanBuild = cleanBuild;
 
 // satrt local environment
 exports.default = gulp.series(
-  stylesLocal, serverLocal, spriteLocal, watcher
+  stylesLocal, spriteLocal, serverLocal, watcher
 );
 
 // create build directory with all necessary directories/files
 // start prod environmetn - make a Build
 exports.build = gulp.series(
-  clean, copy, styles, sprite
+  cleanBuild, copy, styles, sprite
 );

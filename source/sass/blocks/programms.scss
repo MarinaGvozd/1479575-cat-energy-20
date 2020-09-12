@@ -18,7 +18,11 @@
   padding: 20px;
   background-color: $drop-grey;
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
+
+  @-moz-document url-prefix ("") {
+    margin-bottom: 15px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 0 61px 0;
