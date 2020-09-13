@@ -66,6 +66,10 @@
   border-color: #bababa;
 }
 
+.block-programm__radio + .block-programm__label:focus-within::after {
+  border-color: #bababa;
+}
+
 .block-programm__radio:checked ~ .block-programm__label--radio::before {
   content: "";
   position: absolute;

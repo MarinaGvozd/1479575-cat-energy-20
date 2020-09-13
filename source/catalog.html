@@ -36,10 +36,10 @@
       </div>
     </nav>
   </header>
-  <main>
-    <section class="main-catalog">
-      <h1 class="main-catalog__title">Каталог продукции</h1>
-      <ul class="main-catalog__list product">
+  <main class="main-catalog">
+    <section class="catalog">
+      <h1 class="catalog__title">Каталог продукции</h1>
+      <ul class="catalog__list product">
         <li class="product__item production">
           <a class="production__img" href="#">
             <picture>
@@ -56,7 +56,7 @@
               <source media="(min-width: 768px)"
                 srcset="./img/chicken-small-tablet@1x.png 1x, ./img/chicken-small-tablet@2x.png 2x">
               <img class="production__picture" src="./img/chicken-small-mobile@1x.jpg"
-                srcset="./img/chicken-small-mobile@2x.jpg 2x" alt="chicken-small" width="140" height="144">
+                srcset="./img/chicken-small-mobile@2x.jpg 2x" alt="chicken-small" width="140" height="144" tabindex="0">
             </picture>
           </a>
           <table class="production__table">
@@ -92,7 +92,7 @@
               <source media="(min-width: 768px)"
                 srcset="./img/chicken-big-tablet@1x.png 1x, ./img/chicken-big-tablet@2x.png 2x">
               <img class="production__picture production__picture--b" src="./img/chicken-big-mobile@1x.jpg"
-                srcset="./img/chicken-big-mobile@2x.jpg 2x" alt="chicken-big" width="140" height="144">
+                srcset="./img/chicken-big-mobile@2x.jpg 2x" alt="chicken-big" width="140" height="144" tabindex="0">
             </picture>
           </a>
           <table class="production__table">
@@ -127,7 +127,7 @@
               <source media="(min-width: 768px)"
                 srcset="./img/fish-small-tablet@1x.png 1x, ./img/fish-small-tablet@2x.png 2x">
               <img class="production__picture production__picture--s" src="./img/fish-small-mobile@1x.jpg"
-                srcset="./img/fish-small-mobile@2x.jpg 2x" alt="fish-small" width="140" height="144">
+                srcset="./img/fish-small-mobile@2x.jpg 2x" alt="fish-small" width="140" height="144" tabindex="0">
             </picture>
           </a>
           <table class="production__table">
@@ -161,7 +161,7 @@
                 srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
               <img class="production__picture production__picture--b" src="img/fish-big-mobile@1x.jpg"
-                srcset="img/fish-big-mobile@2x.jpg 2x" alt="fish-big" width="140" height="144">
+                srcset="img/fish-big-mobile@2x.jpg 2x" alt="fish-big" width="140" height="144" tabindex="0">
             </picture>
           </a>
           <table class="production__table">
@@ -197,7 +197,8 @@
               <source media="(min-width: 768px)"
                 srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
               <img class="production__picture production__picture--s" src="img/buckwheat-small-mobile@1x.jpg"
-                srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="buckwheat-small" width="140" height="144">
+                srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="buckwheat-small" width="140" height="144"
+                tabindex="0">
             </picture>
           </a>
           <table class="production__table">
@@ -233,7 +234,7 @@
               <source media="(min-width: 768px)"
                 srcset="./img/buckwheat-big-tablet@1x.png 1x, ./img/buckwheat-big-tablet@2x.png 2x">
               <img class="production__picture production__picture--b" src="./img/buckwheat-big-mobile@1x.jpg"
-                srcset="./img/buckwheat-big-mobile@2x.jpg 2x" alt="buckwheat-big" width="140" height="144">
+                srcset="./img/buckwheat-big-mobile@2x.jpg 2x" alt="buckwheat-big" width="140" height="144" tabindex="0">
             </picture>
           </a>
           <table class="production__table">
@@ -268,7 +269,7 @@
               <source media="(min-width: 768px)"
                 srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
               <img class="production__picture production__picture--s" src="img/rice-small-mobile@1x.jpg"
-                srcset="img/rice-small-mobile@2x.jpg 2x" alt="rice-small" width="140" height="144">
+                srcset="img/rice-small-mobile@2x.jpg 2x" alt="rice-small" width="140" height="144" tabindex="0">
             </picture>
           </a>
           <table class="production__table">
@@ -369,21 +370,21 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#" aria-label="Переход на сайт vk">
               <svg class="social__icon social__icon--vk" width="22" height="12">
                 <use xlink:href="./img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#" aria-label="Переход на сайт instagram">
               <svg class="social__icon social__icon--insta" width="16" height="16">
                 <use xlink:href="./img/sprite.svg#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link" href="#" aria-label="Переход на сайт facebook">
               <svg class="social__icon social__icon--fb" width="10" height="19">
                 <use xlink:href="./img/sprite.svg#icon-fb"></use>
               </svg>

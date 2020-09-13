@@ -1,0 +1,38 @@
+.catalog {
+  @include container(20px, 20px, 320px);
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include container(30px, 30px, 768px);
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container(110px, 110px, 1440px);
+    padding-top: 75px;
+  }
+}
+
+.catalog__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0 -20px;
+  padding-bottom: 41px;
+  padding-left: 20px;
+  border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 26px 0;
+  }
+}
+
+.catalog__list {
+  padding: 0;
+  margin: 0;
+}
